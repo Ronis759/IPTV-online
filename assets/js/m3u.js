@@ -5,6 +5,11 @@
 
 const ATTR_RE = /([\w-]+)\s*=\s*"([^"]*)"/g;
 
+/** Атрибуты канала, которые не нужно писать в собранный плейлист. */
+const EXTRA_ATTR_RE = /\s+(catchup|catchup-source|catchup-days|catchup-correction|timeshift|shift|radio|stream-type|user-agent|http-referrer|http-user-agent|x-tvg-url)="[^"]*"/gi;
+
+const NAME_SUFFIX_RE = /\s*\[[^\]]*\]\s*/g;
+
 /** Ищет запятую, разделяющую атрибуты и название канала (вне кавычек). */
 function findNameComma(line) {
   let inQuotes = false;
@@ -151,6 +156,60 @@ export function parsePlaylist(text, baseUrl = '') {
 
   return { items, isHlsMedia, skipped };
 }
+
+/**
+ * Сборка и чистка плейлистов на клиенте.
+ */
+export const Playlist = {
+  /** Убирает из канала мусор: [Geo-blocked] в названии, пустые группы, битые логотипы. */
+  cleanChannel(channel) {
+    const name = String(channel.name || '')
+      .replace(NAME_SUFFIX_RE, ' ')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+    const group = String(channel.group || '').trim();
+    const deadGroup = /^undefined$|^без группы$/i.test(group);
+    return {
+      ...channel,
+      name: name || channel.url,
+      group: deadGroup ? '' : group,
+      logo: channel.logo && /^https?:\/\//i.test(channel.logo) ? channel.logo : '',
+    };
+  },
+
+  /** Собирает текст M3U из списка каналов. */
+  toM3U(items, { title = 'Каналы' } = {}) {
+    const lines = [
+      '#EXTM3U',
+      `# ${title} — каналы проверены: https, CORS, рабочий манифест и видеофрагмент.`,
+      `# Обновлено: ${new Date().toISOString().slice(0, 10)} · каналов: ${items.length}`,
+      '',
+    ];
+
+    for (const item of items) {
+      const channel = Playlist.cleanChannel(item);
+      const url = String(channel.url || '').trim();
+      if (!/^https?:\/\//i.test(url)) continue;
+
+      const attrs = [];
+      if (channel.logo) attrs.push(`tvg-logo="${channel.logo.replace(/"/g, "'")}"`);
+      attrs.push(`tvg-name="${channel.name.replace(/"/g, "'")}"`);
+      if (channel.group) attrs.push(`group-title="${channel.group.replace(/"/g, "'")}"`);
+
+      lines.push(`#EXTINF:-1 ${attrs.join(' ')},${channel.name}`);
+      lines.push(url);
+    }
+
+    return `${lines.join('\n')}\n`;
+  },
+
+  /** Одиночный поток, когда вставлена ссылка прямо на HLS. */
+  single(channel) {
+    const name = String(channel.name || '').replace(/[\r\n]+/g, ' ').trim();
+    const attrs = name ? ` tvg-name="${name.replace(/"/g, "'")}"` : '';
+    return `#EXTM3U\n#EXTINF:-1${attrs},${name}\n${channel.url}\n`;
+  },
+};
 
 /** Понятное имя плейлиста из его адреса. */
 export function guessPlaylistName(url) {

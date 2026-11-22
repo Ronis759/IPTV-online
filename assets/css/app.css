@@ -139,6 +139,9 @@ body {
 .btn.ghost { background: transparent; }
 .btn.ghost:hover { background: var(--panel-2); }
 
+.btn.danger { color: var(--danger); border-color: rgba(255, 93, 108, .45); }
+.btn.danger:hover { background: rgba(255, 93, 108, .12); }
+
 .btn.tiny { min-height: 30px; padding: 4px 10px; font-size: 13px; border-radius: 8px; }
 
 .btn.icon-only {
@@ -523,6 +526,8 @@ select {
   overflow-y: auto;
 }
 
+.modal-sm { width: min(420px, calc(100vw - 32px)); }
+
 .modal-head {
   display: flex;
   align-items: center;
@@ -575,6 +580,27 @@ select {
   transition: background .12s, border-color .12s;
 }
 .chip:hover { background: var(--panel-3); border-color: #33405a; }
+
+.listing { position: relative; display: inline-flex; }
+
+.chip-remove {
+  position: absolute;
+  top: -6px; right: -6px;
+  width: 20px; height: 20px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--panel-3);
+  color: var(--muted);
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .12s, color .12s;
+}
+
+.listing:hover .chip-remove { opacity: 1; }
+.chip-remove:hover { color: var(--danger); }
 
 .saved-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
 

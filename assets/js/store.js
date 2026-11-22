@@ -9,8 +9,11 @@ const KEY = {
   active: `${NS}active`,
   favorites: `${NS}favorites`,
   settings: `${NS}settings`,
+  myListings: `${NS}myListings`,
   cache: `${NS}cache.`,
 };
+
+const MAX_LISTINGS = 20;
 
 const MAX_PLAYLISTS = 15;
 const MAX_CACHE_CHARS = 2_500_000;
@@ -144,6 +147,26 @@ export const Store = {
 
   clearFavorites() {
     write(KEY.favorites, []);
+  },
+
+  /* ---------- Мои плейлисты (избранные каналы) ---------- */
+
+  getListings() {
+    const list = read(KEY.myListings, []);
+    return Array.isArray(list) ? list : [];
+  },
+
+  saveListing(entry) {
+    const list = this.getListings().filter((item) => item.id !== entry.id);
+    list.unshift(entry);
+    write(KEY.myListings, list.slice(0, MAX_LISTINGS));
+    return this.getListings();
+  },
+
+  removeListing(id) {
+    const list = this.getListings().filter((item) => item.id !== id);
+    write(KEY.myListings, list);
+    return list;
   },
 
   /* ---------- Настройки ---------- */

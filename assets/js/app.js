@@ -1,4 +1,4 @@
-import { parsePlaylist, guessPlaylistName } from './m3u.js';
+import { parsePlaylist, guessPlaylistName, Playlist } from './m3u.js';
 import { Store } from './store.js';
 import { Player } from './player.js';
 
@@ -25,6 +25,7 @@ const els = {
   overlayText: $('#overlayText'),
   overlayLoad: $('#overlayLoad'),
   overlayRetry: $('#overlayRetry'),
+  overlayRemove: $('#overlayRemove'),
   spinner: $('#spinner'),
 
   nowLogo: $('#nowLogo'),
@@ -36,6 +37,7 @@ const els = {
   fsBtn: $('#fsBtn'),
   reloadBtn: $('#reloadBtn'),
   copyBtn: $('#copyBtn'),
+  downloadBtn: $('#downloadBtn'),
   streamUrl: $('#streamUrl'),
 
   playlistDialog: $('#playlistDialog'),
@@ -46,6 +48,9 @@ const els = {
   loadUrlBtn: $('#loadUrlBtn'),
   examples: $('#examples'),
   savedList: $('#savedList'),
+  myLists: $('#myLists'),
+  createListBtn: $('#createListBtn'),
+  clearSaved: $('#clearSaved'),
   clearPlaylists: $('#clearPlaylists'),
 
   proxyToggle: $('#proxyToggle'),
@@ -54,6 +59,10 @@ const els = {
   clearAll: $('#clearAll'),
 
   toast: $('#toast'),
+
+  promptDialog: $('#promptDialog'),
+  promptInput: $('#promptInput'),
+  promptOk: $('#promptOk'),
 };
 
 const EXAMPLES = [
@@ -187,6 +196,13 @@ function localizeGroup(name) {
   if (!value) return 'Без группы';
   const key = value.toLowerCase();
   if (CYRILLIC.test(value)) return value;
+
+  if (key.includes(';')) {
+    const parts = key.split(';').map((part) => part.trim()).filter(Boolean);
+    const known = parts.map((part) => GROUP_NAMES[part]);
+    if (known.every(Boolean)) return known.join(', ');
+  }
+
   return GROUP_NAMES[key] || value;
 }
 
@@ -410,13 +426,14 @@ function updateNowPlaying(item) {
   updateFavoriteButton();
 }
 
-function showOverlay({ badge = 'IPTV', title, text, error = false, retry = false, load = true }) {
+function showOverlay({ badge = 'IPTV', title, text, error = false, retry = false, load = true, remove = false }) {
   els.overlayBadge.textContent = badge;
   els.overlayTitle.textContent = title;
   els.overlayText.textContent = text;
   els.overlay.classList.toggle('is-error', error);
   els.overlayRetry.hidden = !retry;
   els.overlayLoad.hidden = !load || error;
+  els.overlayRemove.hidden = !remove;
   els.overlay.hidden = false;
 }
 
@@ -469,6 +486,40 @@ function clearLoadWatchdog() {
     clearTimeout(loadWatchdog);
     loadWatchdog = null;
   }
+}
+
+function removeChannelFromPlaylist(channel) {
+  const before = state.items.length;
+  state.items = state.items.filter((item) => item.url !== channel.url);
+  if (state.items.length === before) return;
+
+  player.stop();
+  clearLoadWatchdog();
+  state.current = null;
+  els.spinner.hidden = true;
+  buildQualityOptions([]);
+
+  if (state.playlist && state.playlist.id) {
+    if (state.playlist.url !== '') {
+      if (state.items.length) Store.setCache(state.playlist.id, state.items);
+      else Store.setCache(state.playlist.id, []);
+    }
+    const saved = Store.getPlaylists().find((entry) => entry.id === state.playlist.id);
+    if (saved) Store.savePlaylist({ ...saved, count: state.items.length });
+  }
+
+  if (!state.items.length) {
+    resetPlaylist();
+    toast('Все каналы убраны из плейлиста', 3000);
+    return;
+  }
+
+  renderGroups();
+  renderChannels();
+  updatePlaylistBar();
+  updateNowPlaying(null);
+  showChooseChannelOverlay(state.items.length);
+  toast(`Канал убран из плейлиста (осталось ${channelsLabel(state.items.length)})`, 3500);
 }
 
 function buildQualityOptions(levels) {
@@ -543,6 +594,7 @@ player.addEventListener('error', (event) => {
       : `${message} Попробуйте другой канал, перезапустить поток или включить прокси в настройках.`,
     error: true,
     retry: true,
+    remove: true,
   });
 });
 
@@ -778,6 +830,137 @@ function renderSaved() {
   }
 }
 
+function listingChip(label, title, onClick, { onRemove } = {}) {
+  const wrap = document.createElement('div');
+  wrap.className = 'listing';
+
+  const chip = document.createElement('button');
+  chip.type = 'button';
+  chip.className = 'chip';
+  chip.textContent = label;
+  chip.title = title;
+  chip.addEventListener('click', onClick);
+
+  wrap.appendChild(chip);
+
+  if (onRemove) {
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'chip-remove';
+    remove.textContent = '✕';
+    remove.title = 'Удалить';
+    remove.addEventListener('click', onRemove);
+    wrap.appendChild(remove);
+  }
+
+  return wrap;
+}
+
+function renderMyLists() {
+  const items = Store.getListings();
+  els.myLists.innerHTML = '';
+
+  const fromFavorites = listingChip(
+    `★ Избранные каналы (${state.favorites.size})`,
+    'Сохранить каналы из избранного в свой плейлист',
+    () => createListing('Мой плейлист', [...state.favorites.values()]),
+    { onRemove: null },
+  );
+  els.myLists.appendChild(fromFavorites);
+
+  for (const entry of items) {
+    const saved = listingChip(
+      `${entry.name} (${entry.items.length})`,
+      'Открыть плейлист',
+      () => openListing(entry),
+      {
+        onRemove: () => {
+          Store.removeListing(entry.id);
+          renderMyLists();
+          toast('Свой плейлист удалён', 2000);
+        },
+      },
+    );
+    els.myLists.appendChild(saved);
+  }
+}
+
+function askName(defaultName) {
+  return new Promise((resolve) => {
+    if (!els.promptDialog) {
+      resolve(window.prompt ? window.prompt('Название плейлиста:', defaultName) : defaultName);
+      return;
+    }
+    els.promptInput.value = defaultName;
+    els.promptDialog.showModal();
+    const done = (value) => {
+      els.promptDialog.close();
+      els.promptOk.onclick = null;
+      els.promptDialog.onclose = null;
+      resolve(value);
+    };
+    els.promptOk.onclick = () => done(els.promptInput.value);
+    els.promptDialog.onclose = () => done(null);
+    els.promptInput.focus();
+    els.promptInput.select();
+  });
+}
+
+function createListing(defaultName, items) {
+  if (!items.length) {
+    toast('Сначала отметьте каналы звёздочкой ☆ — так они попадут в плейлист.', 4500);
+    return;
+  }
+  askName(defaultName).then((name) => {
+    if (name === null) return;
+    buildListing(name.trim() || defaultName, items);
+  });
+}
+
+function buildListing(cleanName, items) {
+  const text = Playlist.toM3U(items, { title: cleanName });
+  const id = `my:${cleanName.toLowerCase()}:${items.length}`;
+
+  applyPlaylist({ name: cleanName, url: '', text, id });
+
+  Store.saveListing({
+    id,
+    name: cleanName,
+    createdAt: Date.now(),
+    items: items.map((item) => Playlist.cleanChannel(item)),
+  });
+  renderMyLists();
+
+  closeDialog('playlistDialog');
+  toast(`Свой плейлист «${cleanName}»: ${channelsLabel(items.length)}. Скачайте его файлом на кнопке ⤓.`, 5200);
+}
+
+function openListing(entry) {
+  const text = Playlist.toM3U(entry.items, { title: entry.name });
+  applyPlaylist({ name: entry.name, url: '', text, id: entry.id });
+  closeDialog('playlistDialog');
+  toast(`Открыт свой плейлист: ${channelsLabel(entry.items.length)}`, 3000);
+}
+
+function downloadCurrentPlaylist() {
+  if (!state.items.length) {
+    toast('Сначала загрузите или создайте плейлист', 3000);
+    return;
+  }
+
+  const title = state.playlist ? state.playlist.name : 'iptv';
+  const text = Playlist.toM3U(state.items, { title });
+  const blob = new Blob([text], { type: 'audio/x-mpegurl;charset=utf-8' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `${title.replace(/[^\wа-яё.-]+/gi, '_')}.m3u`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(link.href), 4000);
+  toast(`Файл ${link.download} сохранён. Его можно залить на GitHub и открыть по ссылке.`, 5000);
+}
+
 function resetPlaylist() {
   loadSeq++;
   player.stop();
@@ -869,7 +1052,7 @@ function bindEvents() {
     handleFile(event.dataTransfer.files[0]);
   });
 
-  els.clearPlaylists.addEventListener('click', () => {
+  els.clearSaved.addEventListener('click', () => {
     if (!Store.getPlaylists().length) return;
     if (!confirm('Удалить все сохранённые плейлисты? Избранное останется.')) return;
     for (const entry of Store.getPlaylists()) Store.removePlaylist(entry.id);
@@ -877,6 +1060,21 @@ function bindEvents() {
     renderSaved();
     resetPlaylist();
     toast('Список плейлистов очищен', 2500);
+  });
+
+  els.clearPlaylists.addEventListener('click', () => {
+    if (!Store.getListings().length) {
+      toast('Своих плейлистов пока нет', 2000);
+      return;
+    }
+    if (!confirm('Удалить все свои плейлисты? Избранные каналы останутся.')) return;
+    for (const entry of Store.getListings()) Store.removeListing(entry.id);
+    renderMyLists();
+    toast('Свои плейлисты удалены', 2500);
+  });
+
+  els.createListBtn.addEventListener('click', () => {
+    createListing('Мой плейлист', [...state.favorites.values()]);
   });
 
   els.proxyToggle.addEventListener('change', () => {
@@ -912,9 +1110,23 @@ function bindEvents() {
     toast('Все данные удалены', 3000);
   });
 
+  // Избранное (звёздочка) и одиночная кнопка скачивания.
   els.favBtn.addEventListener('click', () => {
     if (!state.current) { toast('Сначала выберите канал', 2000); return; }
     toggleFavorite(state.current);
+  });
+
+  els.downloadBtn.addEventListener('click', downloadCurrentPlaylist);
+  els.overlayRemove.addEventListener('click', () => {
+    if (!state.current) return;
+    removeChannelFromPlaylist(state.current);
+  });
+
+  els.promptInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      els.promptOk.click();
+    }
   });
 
   els.reloadBtn.addEventListener('click', () => {
@@ -940,6 +1152,13 @@ function bindEvents() {
       else await els.videoWrap.requestFullscreen();
     } catch {
       toast('Полный экран недоступен', 2500);
+    }
+  });
+
+  els.promptInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      els.promptOk.click();
     }
   });
 
@@ -1014,6 +1233,7 @@ function init() {
   bindEvents();
   renderExamples();
   renderSaved();
+  renderMyLists();
   initSettingsUI();
   renderGroups();
   renderChannels();

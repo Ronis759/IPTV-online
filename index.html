@@ -70,6 +70,7 @@
             <div class="overlay-actions">
               <button class="btn primary" id="overlayLoad" type="button">Загрузить плейлист</button>
               <button class="btn ghost" id="overlayRetry" type="button" hidden>Попробовать снова</button>
+              <button class="btn ghost danger" id="overlayRemove" type="button" hidden>Убрать канал из списка</button>
             </div>
           </div>
         </div>
@@ -90,6 +91,7 @@
           <button class="btn icon-only" id="fsBtn" type="button" title="Полный экран" aria-label="Полный экран">⛶</button>
           <button class="btn icon-only" id="reloadBtn" type="button" title="Перезапустить поток" aria-label="Перезапустить поток">⟳</button>
           <button class="btn icon-only" id="copyBtn" type="button" title="Скопировать ссылку на поток" aria-label="Скопировать ссылку">🔗</button>
+          <button class="btn icon-only" id="downloadBtn" type="button" title="Сохранить плейлист файлом .m3u" aria-label="Сохранить плейлист файлом">⤓</button>
         </div>
       </div>
 
@@ -131,6 +133,18 @@
         <div class="field-label-row">
           <span class="field-label">Мои плейлисты</span>
           <button class="btn tiny ghost" id="clearPlaylists" type="button">Очистить</button>
+        </div>
+        <div class="chips">
+          <button class="btn tiny primary" id="createListBtn" type="button">＋ Создать свой плейлист</button>
+        </div>
+        <p class="field-hint">Выберите каналы в списке, отметьте их звёздочкой — и сохраните свой плейлист файлом .m3u. Ссылку на такой файл можно вставить сюда.</p>
+        <ul class="saved-list" id="myLists"></ul>
+      </div>
+
+      <div class="field">
+        <div class="field-label-row">
+          <span class="field-label">Загруженные плейлисты</span>
+          <button class="btn tiny ghost" id="clearSaved" type="button">Очистить</button>
         </div>
         <ul class="saved-list" id="savedList"></ul>
       </div>
@@ -177,6 +191,21 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <dialog class="modal modal-sm" id="promptDialog">
+    <div class="modal-inner">
+      <header class="modal-head">
+        <h2>Название плейлиста</h2>
+      </header>
+      <div class="field">
+        <label for="promptInput">Как назовём?</label>
+        <input id="promptInput" type="text" maxlength="60" autocomplete="off" spellcheck="false">
+      </div>
+      <footer class="modal-foot">
+        <button class="btn primary" id="promptOk" type="button">Сохранить</button>
+      </footer>
+    </div>
+  </dialog>
 
   <script src="assets/vendor/hls.min.js" defer></script>
   <script src="assets/vendor/mpegts.js" defer></script>
