@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IPTV Online — плеер плейлистов</title>
+  <meta name="description" content="Простой браузерный IPTV-плеер: загрузите M3U-плейлист по ссылке или файлом и смотрите каналы прямо в браузере.">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="IPTV Online">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">IPTV<span>Online</span></span>
+    </a>
+
+    <div class="topbar-actions">
+      <button class="btn ghost" id="openPlaylists" type="button">
+        <span aria-hidden="true">☰</span> Плейлисты
+      </button>
+      <button class="btn ghost icon-only" id="openSettings" type="button" title="Настройки" aria-label="Настройки">
+        <span aria-hidden="true">⚙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="layout">
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-tools">
+        <div class="search-field">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Поиск канала…" autocomplete="off" spellcheck="false">
+        </div>
+        <select id="groupSelect" aria-label="Группа каналов">
+          <option value="all">Все каналы</option>
+        </select>
+      </div>
+
+      <div class="playlist-bar">
+        <div class="playlist-bar-text">
+          <strong id="playlistName">Плейлист не загружен</strong>
+          <span id="playlistMeta">Загрузите M3U-плейлист, чтобы начать</span>
+        </div>
+        <button class="btn tiny" id="changePlaylist" type="button">Сменить</button>
+      </div>
+
+      <ul class="channel-list" id="channelList" aria-label="Список каналов"></ul>
+
+      <div class="empty-list" id="emptyList">
+        <p>Здесь появятся каналы.</p>
+        <button class="btn primary" id="emptyLoadBtn" type="button">Загрузить плейлист</button>
+      </div>
+
+      <button class="btn load-more" id="loadMore" type="button" hidden>Показать ещё</button>
+    </aside>
+
+    <section class="stage">
+      <div class="video-wrap" id="videoWrap">
+        <video id="video" playsinline controls preload="none"></video>
+
+        <div class="overlay" id="overlay">
+          <div class="overlay-inner">
+            <div class="overlay-badge" id="overlayBadge">IPTV</div>
+            <h2 class="overlay-title" id="overlayTitle">Выберите канал</h2>
+            <p class="overlay-text" id="overlayText">Загрузите плейлист по ссылке или файлом — и каналы появятся в списке слева.</p>
+            <div class="overlay-actions">
+              <button class="btn primary" id="overlayLoad" type="button">Загрузить плейлист</button>
+              <button class="btn ghost" id="overlayRetry" type="button" hidden>Попробовать снова</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="spinner" id="spinner" hidden aria-label="Загрузка"></div>
+      </div>
+
+      <div class="now-playing">
+        <img class="now-logo" id="nowLogo" alt="" hidden>
+        <div class="now-text">
+          <h1 id="nowTitle">Ничего не воспроизводится</h1>
+          <p id="nowMeta">Выберите канал из списка</p>
+        </div>
+        <div class="now-actions">
+          <select id="qualitySelect" class="quality" hidden aria-label="Качество"></select>
+          <button class="btn icon-only" id="favBtn" type="button" title="В избранное" aria-label="В избранное">☆</button>
+          <button class="btn icon-only" id="pipBtn" type="button" title="Картинка в картинке" aria-label="Картинка в картинке">⧉</button>
+          <button class="btn icon-only" id="fsBtn" type="button" title="Полный экран" aria-label="Полный экран">⛶</button>
+          <button class="btn icon-only" id="reloadBtn" type="button" title="Перезапустить поток" aria-label="Перезапустить поток">⟳</button>
+          <button class="btn icon-only" id="copyBtn" type="button" title="Скопировать ссылку на поток" aria-label="Скопировать ссылку">🔗</button>
+        </div>
+      </div>
+
+      <div class="stream-url" id="streamUrl" title=""></div>
+    </section>
+
+  </main>
+
+  <!-- Плейлисты -->
+  <dialog class="modal" id="playlistDialog">
+    <div class="modal-inner">
+      <header class="modal-head">
+        <h2>Плейлисты</h2>
+        <button class="btn icon-only" type="button" data-close="playlistDialog" aria-label="Закрыть">✕</button>
+      </header>
+
+      <div class="drop-zone" id="dropZone">
+        <span class="drop-icon" aria-hidden="true">⇩</span>
+        <p>Перетащите сюда файл <b>.m3u</b> / <b>.m3u8</b></p>
+        <label class="btn" for="fileInput">Выбрать файл</label>
+        <input id="fileInput" type="file" accept=".m3u,.m3u8,.txt,audio/x-mpegurl,application/x-mpegurl" hidden>
+      </div>
+
+      <div class="field">
+        <label for="urlInput">Ссылка на плейлист</label>
+        <div class="field-row">
+          <input id="urlInput" type="url" inputmode="url" placeholder="https://example.com/playlist.m3u" autocomplete="off" spellcheck="false">
+          <button class="btn primary" id="loadUrlBtn" type="button">Загрузить</button>
+        </div>
+        <p class="field-hint" id="urlHint">Если сервер плейлиста блокирует запросы с сайта (CORS) — включите прокси в настройках.</p>
+      </div>
+
+      <div class="field">
+        <span class="field-label">Быстрый старт (бесплатные открытые списки)</span>
+        <div class="chips" id="examples"></div>
+      </div>
+
+      <div class="field">
+        <div class="field-label-row">
+          <span class="field-label">Мои плейлисты</span>
+          <button class="btn tiny ghost" id="clearPlaylists" type="button">Очистить</button>
+        </div>
+        <ul class="saved-list" id="savedList"></ul>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Настройки -->
+  <dialog class="modal" id="settingsDialog">
+    <div class="modal-inner">
+      <header class="modal-head">
+        <h2>Настройки</h2>
+        <button class="btn icon-only" type="button" data-close="settingsDialog" aria-label="Закрыть">✕</button>
+      </header>
+
+      <label class="switch-row">
+        <input type="checkbox" id="proxyToggle">
+        <span>
+          <b>Загружать плейлисты через CORS-прокси</b>
+          <small>Помогает, если браузер не может скачать плейлист напрямую. Сами видеопотоки всё равно должны разрешать воспроизведение.</small>
+        </span>
+      </label>
+
+      <div class="field">
+        <label for="proxyTemplate">Адрес прокси (шаблон)</label>
+        <input id="proxyTemplate" type="text" spellcheck="false" placeholder="https://api.allorigins.win/raw?url={url}">
+        <p class="field-hint">Вместо <code>{url}</code> подставляется ссылка на плейлист. Можно указать свой прокси.</p>
+      </div>
+
+      <div class="field">
+        <div class="field-label-row">
+          <span class="field-label">Данные в браузере</span>
+        </div>
+        <div class="stack">
+          <button class="btn" id="clearFavorites" type="button">Очистить избранное</button>
+          <button class="btn" id="clearAll" type="button">Удалить все плейлисты и кэш</button>
+        </div>
+        <p class="field-hint">Плейлисты, избранное и настройки хранятся только в этом браузере (localStorage).</p>
+      </div>
+
+      <footer class="modal-foot">
+        <button class="btn primary" type="button" data-close="settingsDialog">Готово</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="assets/vendor/hls.min.js" defer></script>
+  <script src="assets/vendor/mpegts.js" defer></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
