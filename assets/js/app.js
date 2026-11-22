@@ -57,6 +57,7 @@ const els = {
 };
 
 const EXAMPLES = [
+  { label: '✅ Проверенные', url: new URL('verified.m3u', window.location.href).href },
   { label: 'Россия', url: 'https://iptv-org.github.io/iptv/countries/ru.m3u' },
   { label: 'Украина', url: 'https://iptv-org.github.io/iptv/countries/ua.m3u' },
   { label: 'Беларусь', url: 'https://iptv-org.github.io/iptv/countries/by.m3u' },
@@ -147,6 +148,48 @@ function channelsLabel(count) {
   return `${count} ${plural(count, 'канал', 'канала', 'каналов')}`;
 }
 
+/** Английские названия групп из плейлистов iptv-org → по-русски. */
+const GROUP_NAMES = {
+  general: 'Общие',
+  news: 'Новости',
+  music: 'Музыка',
+  movies: 'Кино',
+  sports: 'Спорт',
+  kids: 'Детские',
+  entertainment: 'Развлечения',
+  religious: 'Религиозные',
+  culture: 'Культура',
+  documentary: 'Документальные',
+  lifestyle: 'Образ жизни',
+  shop: 'Магазины',
+  outdoor: 'Природа и туризм',
+  family: 'Семейные',
+  series: 'Сериалы',
+  comedy: 'Комедия',
+  education: 'Обучение',
+  science: 'Наука',
+  weather: 'Погода',
+  business: 'Бизнес',
+  auto: 'Авто',
+  cooking: 'Кулинария',
+  travel: 'Путешествия',
+  undefined: 'Без группы',
+  russia: 'Россия',
+  ukraine: 'Украина',
+  belarus: 'Беларусь',
+  kazakhstan: 'Казахстан',
+};
+
+const CYRILLIC = /[а-яё]/i;
+
+function localizeGroup(name) {
+  const value = String(name || '').trim();
+  if (!value) return 'Без группы';
+  const key = value.toLowerCase();
+  if (CYRILLIC.test(value)) return value;
+  return GROUP_NAMES[key] || value;
+}
+
 function syncFavorites() {
   state.favorites = new Map(Store.getFavorites().map((item) => [item.url, item]));
 }
@@ -162,7 +205,7 @@ function setBusy(busy) {
    ============================================================ */
 
 function groupName(item) {
-  return item.group || 'Без группы';
+  return localizeGroup(item.group);
 }
 
 function renderGroups() {
@@ -171,7 +214,6 @@ function renderGroups() {
     const name = groupName(item);
     groups.set(name, (groups.get(name) || 0) + 1);
   }
-
   const select = els.groupSelect;
   select.innerHTML = '';
 
@@ -610,6 +652,8 @@ function applyPlaylist({ name, url, text, id, cache = true }) {
   return { count: items.length };
 }
 
+let loadSeq = 0;
+
 async function loadPlaylistFromUrl(rawUrl, options = {}) {
   const { silent = false, name } = options;
   const url = normalizeUrl(rawUrl);
@@ -619,11 +663,12 @@ async function loadPlaylistFromUrl(rawUrl, options = {}) {
     return;
   }
 
-  if (state.busy) return;
+  const seq = ++loadSeq;
   setBusy(true);
 
   try {
     const text = await fetchPlaylistText(url);
+    if (seq !== loadSeq) return;
     const result = applyPlaylist({
       name: name || guessPlaylistName(url),
       url,
@@ -634,11 +679,11 @@ async function loadPlaylistFromUrl(rawUrl, options = {}) {
       toast(`Плейлист загружен: ${channelsLabel(result.count)}`);
     }
   } catch (error) {
-    if (!silent) {
+    if (!silent && seq === loadSeq) {
       toast(`Не удалось загрузить: ${error.message}. Проверьте ссылку или включите прокси в настройках.`, 7000);
     }
   } finally {
-    setBusy(false);
+    if (seq === loadSeq) setBusy(false);
   }
 }
 
@@ -650,7 +695,9 @@ async function handleFile(file) {
   }
 
   try {
+    const seq = ++loadSeq;
     const text = await file.text();
+    if (seq !== loadSeq) return;
     const name = file.name.replace(/\.[^.]+$/, '');
     const result = applyPlaylist({
       name,
@@ -732,6 +779,7 @@ function renderSaved() {
 }
 
 function resetPlaylist() {
+  loadSeq++;
   player.stop();
   clearLoadWatchdog();
   state.items = [];

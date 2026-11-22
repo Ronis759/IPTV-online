@@ -1,0 +1,3301 @@
+{
+  "generatedAt": "2026-11-22T15:36:04.696Z",
+  "checked": 1024,
+  "working": 566,
+  "written": 400,
+  "maxTotalMs": 4000,
+  "sources": [
+    {
+      "name": "Россия",
+      "url": "https://iptv-org.github.io/iptv/countries/ru.m3u",
+      "total": 508,
+      "https": 240,
+      "checked": 240,
+      "working": 161
+    },
+    {
+      "name": "Русскоязычные",
+      "url": "https://iptv-org.github.io/iptv/languages/rus.m3u",
+      "total": 654,
+      "https": 326,
+      "checked": 326,
+      "working": 67
+    },
+    {
+      "name": "Беларусь",
+      "url": "https://iptv-org.github.io/iptv/countries/by.m3u",
+      "total": 28,
+      "https": 17,
+      "checked": 17,
+      "working": 0
+    },
+    {
+      "name": "Казахстан",
+      "url": "https://iptv-org.github.io/iptv/countries/kz.m3u",
+      "total": 49,
+      "https": 40,
+      "checked": 40,
+      "working": 8
+    },
+    {
+      "name": "Новости",
+      "url": "https://iptv-org.github.io/iptv/categories/news.m3u",
+      "total": 1065,
+      "https": 925,
+      "checked": 150,
+      "working": 92
+    },
+    {
+      "name": "Музыка",
+      "url": "https://iptv-org.github.io/iptv/categories/music.m3u",
+      "total": 781,
+      "https": 660,
+      "checked": 120,
+      "working": 75
+    },
+    {
+      "name": "Кино",
+      "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
+      "total": 782,
+      "https": 510,
+      "checked": 100,
+      "working": 23
+    },
+    {
+      "name": "Спорт",
+      "url": "https://iptv-org.github.io/iptv/categories/sports.m3u",
+      "total": 537,
+      "https": 313,
+      "checked": 100,
+      "working": 48
+    },
+    {
+      "name": "Детские",
+      "url": "https://iptv-org.github.io/iptv/categories/kids.m3u",
+      "total": 457,
+      "https": 286,
+      "checked": 80,
+      "working": 33
+    },
+    {
+      "name": "Free-TV",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "total": 2193,
+      "https": 1814,
+      "checked": 150,
+      "working": 59
+    }
+  ],
+  "channels": [
+    {
+      "name": "Belarus-5 (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/NJsRFud.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8",
+      "ms": 24,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Belarus-24 HD (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/BP7tY6F.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8",
+      "ms": 25,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Vitebsk (720p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/qr26qQn.png",
+      "url": "https://live.dc.beltelecom.by/vtv/vitebsk.stream/playlist.m3u8",
+      "ms": 28,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Belarus-4 Vitebsk (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/XNkQrMr.png",
+      "url": "https://ngtrk.dc.beltelecom.by/vtv/bt4.stream/playlist.m3u8",
+      "ms": 31,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Smotrim 100% Prazdnik (1080p)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/NEcqFse.png",
+      "url": "https://stream.smotrim.ru/hls2/fasttv04/playlist_3.m3u8",
+      "ms": 33,
+      "source": "Россия"
+    },
+    {
+      "name": "Perviy Informationniy HD (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/eIiXRAI.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8",
+      "ms": 38,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Belarus-3 HD (1080p)",
+      "group": "Culture",
+      "logo": "https://i.imgur.com/JkcDycn.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus3.smil/playlist.m3u8",
+      "ms": 39,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Smotrim 100% Klassika (1080p)",
+      "group": "Classic;Movies",
+      "logo": "https://i.imgur.com/aASNpKq.png",
+      "url": "https://stream.smotrim.ru/hls2/fasttv03/playlist_3.m3u8",
+      "ms": 43,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +2 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus2/playlist_5.m3u8",
+      "ms": 44,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +3 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus3/playlist_5.m3u8",
+      "ms": 48,
+      "source": "Россия"
+    },
+    {
+      "name": "Smotrim 100% Muzhskoe (1080p)",
+      "group": "Series",
+      "logo": "https://i.imgur.com/UY3fjYU.png",
+      "url": "https://stream.smotrim.ru/hls2/fasttv02/playlist_3.m3u8",
+      "ms": 48,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +4 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus4/playlist_5.m3u8",
+      "ms": 54,
+      "source": "Россия"
+    },
+    {
+      "name": "Smotrim 100% Gorkogo (1080p)",
+      "group": "Movies",
+      "logo": "https://cdn.smotrim.ru/photobank/prod/large/156/126/56.jpg",
+      "url": "https://stream.smotrim.ru/hls2/fasttv07/playlist_3.m3u8",
+      "ms": 56,
+      "source": "Россия"
+    },
+    {
+      "name": "Belarus-4 Gomel (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/XNkQrMr.png",
+      "url": "https://live.dc.beltelecom.by/trkgomel/trkgomel.stream/playlist.m3u8",
+      "ms": 59,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Smotrim 100% Detskoe (1080p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/1hsNeTa.png",
+      "url": "https://stream.smotrim.ru/hls2/fasttv05/playlist_3.m3u8",
+      "ms": 60,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +5 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus5/playlist_5.m3u8",
+      "ms": 61,
+      "source": "Россия"
+    },
+    {
+      "name": "Sankt-Peterburg HD (720p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/9At4oG7.png",
+      "url": "https://stream.smotrim.ru/hls2/ext_spbtv/playlist_5.m3u8",
+      "ms": 65,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-K +4 (1080p)",
+      "group": "Culture",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Russia-Cultura.svg/960px-Russia-Cultura.svg.png",
+      "url": "https://stream.smotrim.ru/hls2/russia_k_dubl2/playlist_5.m3u8",
+      "ms": 68,
+      "source": "Россия"
+    },
+    {
+      "name": "Smotrim 100% Fakty (1080p)",
+      "group": "Documentary",
+      "logo": "https://i.imgur.com/dB3cJzO.png",
+      "url": "https://stream.smotrim.ru/hls2/fasttv06/playlist_3.m3u8",
+      "ms": 71,
+      "source": "Россия"
+    },
+    {
+      "name": "Radio Rossii (720p)",
+      "group": "General",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Radio_Rossii_logo.svg/1920px-Radio_Rossii_logo.svg.png",
+      "url": "https://stream.smotrim.ru/hls2/radio_rus/playlist_4.m3u8",
+      "ms": 75,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +9 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus9/playlist_5.m3u8",
+      "ms": 80,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-K +7 (1080p)",
+      "group": "Culture",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Russia-Cultura.svg/960px-Russia-Cultura.svg.png",
+      "url": "https://stream.smotrim.ru/hls2/russia_k_dubl3/playlist_5.m3u8",
+      "ms": 82,
+      "source": "Россия"
+    },
+    {
+      "name": "Vesti FM (720p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/ZBHqSZj.png",
+      "url": "https://stream.smotrim.ru/hls2/vesti_fm/playlist_4.m3u8",
+      "ms": 84,
+      "source": "Россия"
+    },
+    {
+      "name": "Euronews English HD",
+      "group": "News",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Euro_News.png",
+      "url": "https://dash4.antik.sk/live/test_euronews/playlist.m3u8",
+      "ms": 87,
+      "source": "Новости"
+    },
+    {
+      "name": "Surgut 24",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/OxvqXMt.png",
+      "url": "https://sitv.ru/vgtrk/stv.m3u8",
+      "ms": 91,
+      "source": "Россия"
+    },
+    {
+      "name": "RAZ 3 International",
+      "group": "Undefined",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Raz_3_%282026%29.png",
+      "url": "https://dash2.antik.sk/live/kvartal_tv/playlist.m3u8",
+      "ms": 93,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Russia-24 (1080p)",
+      "group": "News",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rossiya-24_Logo.svg/960px-Rossiya-24_Logo.svg.png",
+      "url": "https://stream.smotrim.ru/hls2/givc11_hd/playlist_4.m3u8",
+      "ms": 94,
+      "source": "Россия"
+    },
+    {
+      "name": "Moskva. Doveriye (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/QDqDQzt.png",
+      "url": "https://stream.smotrim.ru/hls2/doverie/playlist_3.m3u8",
+      "ms": 95,
+      "source": "Россия"
+    },
+    {
+      "name": "S1 (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/chNBF5t.png",
+      "url": "https://sitv.ru/hls/stv.m3u8",
+      "ms": 95,
+      "source": "Россия"
+    },
+    {
+      "name": "Smotrim 100% Lyubov (1080p)",
+      "group": "Series",
+      "logo": "https://i.imgur.com/4EFh0nu.png",
+      "url": "https://stream.smotrim.ru/hls2/fasttv01/playlist_2.m3u8",
+      "ms": 96,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +1 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus1/playlist_5.m3u8",
+      "ms": 99,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +8 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus8/playlist_5.m3u8",
+      "ms": 101,
+      "source": "Россия"
+    },
+    {
+      "name": "RTR-Planeta Europe (720p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/0YEahxs.png",
+      "url": "https://stream.smotrim.ru/hls/planeta_rtr_euro/playlist.m3u8?entity=channel&id=510&sign=5c0ac65d75140fac2fd938d77c92138d",
+      "ms": 101,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Belarus-2 HD (1080p)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/BpEHpPS.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus2.smil/playlist.m3u8",
+      "ms": 104,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Radio Mir (720p)",
+      "group": "General",
+      "logo": "https://pbs.twimg.com/profile_images/1902997619724480512/jY6I1qIH_400x400.jpg",
+      "url": "https://stream1.dc.beltelecom.by/radiomir/studio.stream/playlist.m3u8",
+      "ms": 106,
+      "source": "Россия"
+    },
+    {
+      "name": "Smotrim 100% k 1 (1080p)",
+      "group": "Entertainment",
+      "logo": "https://cdn.smotrim.ru/photobank/prod/large/156/263/96.jpg",
+      "url": "https://stream.smotrim.ru/hls2/fasttv08/playlist_2.m3u8",
+      "ms": 106,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-K +2 (1080p)",
+      "group": "Culture",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Russia-Cultura.svg/960px-Russia-Cultura.svg.png",
+      "url": "https://stream.smotrim.ru/hls2/russia_k_dubl1/playlist_5.m3u8",
+      "ms": 107,
+      "source": "Россия"
+    },
+    {
+      "name": "Kinopremyera (1080p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/s0UYT8T.png",
+      "url": "https://fs.uplink.kz/kinopremiera_hd/mono.m3u8?token=onlinetv",
+      "ms": 120,
+      "source": "Россия"
+    },
+    {
+      "name": "Kinoseriya (576p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/iao7zLZ.png",
+      "url": "https://fs.uplink.kz/kinoseria/mono.m3u8?token=onlinetv",
+      "ms": 120,
+      "source": "Россия"
+    },
+    {
+      "name": "Dorama (576p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/ZH5LuXU.png",
+      "url": "https://fs.uplink.kz/dorama/mono.m3u8?token=onlinetv",
+      "ms": 122,
+      "source": "Россия"
+    },
+    {
+      "name": "KinoBoevik (1080p)",
+      "group": "Movies",
+      "logo": "https://kt.server-img.lfstrm.tv/images/channel_logos/logo_66b351f01f828dca40d006b3.png",
+      "url": "https://fs.uplink.kz/kinoboevik/mono.m3u8?token=onlinetv",
+      "ms": 122,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Dom kino International (576p)",
+      "group": "Movies",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png/960px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png",
+      "url": "https://fs.uplink.kz/dom_kino/mono.m3u8?token=onlinetv",
+      "ms": 125,
+      "source": "Россия"
+    },
+    {
+      "name": "National Geographic Wild (Russia) (576p)",
+      "group": "Documentary",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png",
+      "url": "https://fs.uplink.kz/nat_geo_wild/mono.m3u8?token=onlinetv",
+      "ms": 125,
+      "source": "Россия"
+    },
+    {
+      "name": "Domashnie Zhivotnye (576p)",
+      "group": "Lifestyle",
+      "logo": "https://tv-stream.ru/uploads/D_Zh_ad21d48199.svg",
+      "url": "https://fs.uplink.kz/domashnie_zhivotnie/mono.m3u8?token=onlinetv",
+      "ms": 126,
+      "source": "Россия"
+    },
+    {
+      "name": "Atameken Business (576p)",
+      "group": "Business",
+      "logo": "https://i.imgur.com/CfRvm8i.png",
+      "url": "https://fs.uplink.kz/atameken/mono.m3u8?token=onlinetv",
+      "ms": 126,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Carousel International (576p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/DnlngRZ.png",
+      "url": "https://fs.uplink.kz/karusel/mono.m3u8?token=onlinetv",
+      "ms": 126,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Alarabiya (1080p)",
+      "group": "News",
+      "logo": "https://shahid.mbc.net/mediaObject/a4c125db-ede8-4970-9eed-963948c78651?height=auto&width=512&croppingPoint=&version=1&type=png",
+      "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+      "ms": 126,
+      "source": "Новости"
+    },
+    {
+      "name": "India (576p)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/xDVcDOc.png",
+      "url": "https://fs.uplink.kz/india/mono.m3u8?token=onlinetv",
+      "ms": 127,
+      "source": "Россия"
+    },
+    {
+      "name": "Pro Business (720p)",
+      "group": "Business",
+      "logo": "https://i.imgur.com/1u8KvTD.png",
+      "url": "https://tv-streaming.bsh.ru:21938/probusiness/probusiness.stream/playlist.m3u8",
+      "ms": 127,
+      "source": "Россия"
+    },
+    {
+      "name": "Tochka otryva (576p)",
+      "group": "Undefined",
+      "logo": "https://tv-stream.ru/uploads/Tochka_Otriva_c4317672bb.svg",
+      "url": "https://fs.uplink.kz/tochka_otriva/mono.m3u8?token=onlinetv",
+      "ms": 129,
+      "source": "Россия"
+    },
+    {
+      "name": "Almaty TV (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/OFobQkI.png",
+      "url": "https://fs.uplink.kz/almaty/mono.m3u8?token=onlinetv",
+      "ms": 130,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Mirovoe kino (1080p)",
+      "group": "Movies",
+      "logo": "https://tele2.server-img.lfstrm.tv/images/channel_logos/logo_65c24031d8bec399a7aa2226.png",
+      "url": "https://fs.uplink.kz/mirovoe_kino/mono.m3u8?token=onlinetv",
+      "ms": 131,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Tele Tricolore",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/A2XouAd.png",
+      "url": "https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8",
+      "ms": 131,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Smotrim 100% Talk-show (1080p)",
+      "group": "Entertainment",
+      "logo": "https://cdn.smotrim.ru/photobank/prod/large/156/431/82.jpg",
+      "url": "https://stream.smotrim.ru/hls2/fasttv09/playlist_3.m3u8",
+      "ms": 132,
+      "source": "Россия"
+    },
+    {
+      "name": "Channel One CIS (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/RUSX0rX.png",
+      "url": "https://fs.uplink.kz/perviy_kanal_sng/mono.m3u8?token=onlinetv",
+      "ms": 132,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Belarus-1 HD (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/sUD9t5j.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8",
+      "ms": 133,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Balapan (576p)",
+      "group": "Kids",
+      "logo": "https://vote.rtrk.kz/img/balapan-logo.png",
+      "url": "https://fs.uplink.kz/balapan/mono.m3u8?token=onlinetv",
+      "ms": 135,
+      "source": "Казахстан"
+    },
+    {
+      "name": "Drive (576i)",
+      "group": "Auto",
+      "logo": "https://i.imgur.com/FnuwfSC.png",
+      "url": "https://stream8.cinerama.uz/1421/tracks-v1a1/mono.m3u8",
+      "ms": 136,
+      "source": "Россия"
+    },
+    {
+      "name": "Channel One Eurasia (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/vm5sJHP.png",
+      "url": "https://fs.uplink.kz/perviy_kanal_evrasia/mono.m3u8?token=onlinetv",
+      "ms": 137,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Istoriya (576p)",
+      "group": "Documentary",
+      "logo": "https://i.imgur.com/eEjPail.png",
+      "url": "https://fs.uplink.kz/istoriya/mono.m3u8?token=onlinetv",
+      "ms": 138,
+      "source": "Россия"
+    },
+    {
+      "name": "Novoe televidenie (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/mmKWrWs.png",
+      "url": "https://fs.uplink.kz/novoe_tv/mono.m3u8?token=onlinetv",
+      "ms": 139,
+      "source": "Казахстан"
+    },
+    {
+      "name": "TNV-Planet (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/ijA1zDw.png",
+      "url": "https://fs.uplink.kz/tnv/mono.m3u8?token=onlinetv",
+      "ms": 141,
+      "source": "Россия"
+    },
+    {
+      "name": "Lapki Live (576p)",
+      "group": "Undefined",
+      "logo": "https://lapki.live/lapki_og.png",
+      "url": "https://fs.uplink.kz/lapki_live/mono.m3u8?token=onlinetv",
+      "ms": 142,
+      "source": "Россия"
+    },
+    {
+      "name": "Prodvizhenie (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/KlsnfG9.png",
+      "url": "https://streaming.astrakhan.ru/proastrakhanhd/index.m3u8",
+      "ms": 142,
+      "source": "Россия"
+    },
+    {
+      "name": "STV (Belarus) HD (720p)",
+      "group": "General",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/960px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png",
+      "url": "https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8",
+      "ms": 143,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Multilandia (576p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/ccwijY0.png",
+      "url": "https://fs.uplink.kz/multilandia/mono.m3u8?token=onlinetv",
+      "ms": 146,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Belarus-1 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/sUD9t5j.png",
+      "url": "https://ngtrk.dc.beltelecom.by/ngtrk/_definst_/smil:belarus1.smil/playlist.m3u8",
+      "ms": 147,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Mult International (576p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/xi351Fx.png",
+      "url": "https://fs.uplink.kz/mult/mono.m3u8?token=onlinetv",
+      "ms": 148,
+      "source": "Россия"
+    },
+    {
+      "name": "Balapan International (1080p)",
+      "group": "Kids",
+      "logo": "https://otv.server-img.lfstrm.tv/images/channel_logos/logo_638108d82e47243302bc81f1.png",
+      "url": "https://live-3.otcnet.ru/Balapan/index.m3u8",
+      "ms": 152,
+      "source": "Казахстан"
+    },
+    {
+      "name": "Telplus (360p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/1zbcZ3p.png",
+      "url": "https://streaming.astrakhan.ru/telplushd/playlist.m3u8",
+      "ms": 154,
+      "source": "Россия"
+    },
+    {
+      "name": "TV Centr International (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/tsCOnBW.png",
+      "url": "https://stream8.cinerama.uz/1281/tracks-v1a1/mono.m3u8",
+      "ms": 154,
+      "source": "Россия"
+    },
+    {
+      "name": "Soyuz (576p)",
+      "group": "Religious",
+      "logo": "https://i.imgur.com/w3OewHc.png",
+      "url": "https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz/soyuz/playlist.m3u8",
+      "ms": 155,
+      "source": "Россия"
+    },
+    {
+      "name": "Sevimli TV (1080p)",
+      "group": "Family",
+      "logo": "https://i.imgur.com/iMwzRlr.png",
+      "url": "https://stream8.cinerama.uz/1017/tracks-v1a1/playlist.m3u8",
+      "ms": 155,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Moskva 24 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/gXbUMVy.png",
+      "url": "https://stream.smotrim.ru/hls/givc8/playlist.m3u8?entity=channel&id=798&sign=37881ef2e289f062ceff0dca6c24dc58",
+      "ms": 156,
+      "source": "Россия"
+    },
+    {
+      "name": "Sport+ Qazaqstan (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/vIV7x6n.png",
+      "url": "https://fs.uplink.kz/sport+/mono.m3u8?token=onlinetv",
+      "ms": 157,
+      "source": "Казахстан"
+    },
+    {
+      "name": "TNT4 International (576p)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/gBokU5i.png",
+      "url": "https://fs.uplink.kz/tnt4/mono.m3u8?token=onlinetv",
+      "ms": 163,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Kongress TV (1080p)",
+      "group": "General",
+      "logo": "https://tvcongress.ru/bitrix/templates/mbntheme/img/logo_tvc.svg",
+      "url": "https://live-3.otcnet.ru/congresstv/index.m3u8",
+      "ms": 164,
+      "source": "Россия"
+    },
+    {
+      "name": "Prima (Russia) (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/33XGMch.png",
+      "url": "https://tele2dvrnat01-02.cdnvideo.ru/stream/NAT_Prima/hls/index.m3u8",
+      "ms": 165,
+      "source": "Россия"
+    },
+    {
+      "name": "Magnat (1080p)",
+      "group": "Shop",
+      "logo": "https://i.imgur.com/r485aZL.png",
+      "url": "https://s1.tv-nano.com/Magnat_HD_5119705/video.m3u8",
+      "ms": 169,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +7 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus7/playlist_5.m3u8",
+      "ms": 172,
+      "source": "Россия"
+    },
+    {
+      "name": "KiKA HD",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/vZdNp5S.png",
+      "url": "https://dash4.antik.sk/live/test_kika_tizen/playlist.m3u8",
+      "ms": 172,
+      "source": "Детские"
+    },
+    {
+      "name": "24KZ (576p)",
+      "group": "News",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/24KZ_logo.svg/1280px-24KZ_logo.svg.png",
+      "url": "https://fs.uplink.kz/24KZ/mono.m3u8?token=onlinetv",
+      "ms": 176,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "FREEDOM (1080p)",
+      "group": "News",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/FreeDOMUAlogo.svg/960px-FreeDOMUAlogo.svg.png",
+      "url": "https://dash4.antik.sk/live/test_uatv/playlist.m3u8",
+      "ms": 176,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Apsua TV (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/TJowroY.png",
+      "url": "https://gcmx3v3owcj.a.trbcdn.net/livemaster/ba7pu_fgej0zelpw.smil/playlist.m3u8?blstid=null",
+      "ms": 178,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Maidan (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/C8CCjZK.png",
+      "url": "https://live-maidantv.cdnvideo.ru/maidantv/maidantv.smil/playlist.m3u8",
+      "ms": 182,
+      "source": "Россия"
+    },
+    {
+      "name": "Friday! International Kazakhstan (576p)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/N2z3EZC.png",
+      "url": "https://fs.uplink.kz/bolshaya_pyatnica/mono.m3u8?token=onlinetv",
+      "ms": 187,
+      "source": "Россия"
+    },
+    {
+      "name": "Dacha (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/xq6p9BZ.png",
+      "url": "https://dash2.antik.sk/live/test_dacha_tv_atktv/playlist.m3u8",
+      "ms": 187,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "START World (576p)",
+      "group": "Movies",
+      "logo": "https://images.iptv.rt.ru/images/d6iist8mifeailfopupg.png",
+      "url": "https://fs.uplink.kz/start_world/mono.m3u8?token=onlinetv",
+      "ms": 189,
+      "source": "Россия"
+    },
+    {
+      "name": "Russia-1 +6 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Osd2JHL.png",
+      "url": "https://stream.smotrim.ru/hls2/russia1_plus6/playlist_5.m3u8",
+      "ms": 192,
+      "source": "Россия"
+    },
+    {
+      "name": "RTR-Planeta (720p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/0YEahxs.png",
+      "url": "https://stream.smotrim.ru/hls/planeta_rtr_sng/playlist.m3u8?entity=channel&id=512&sign=2abaa592de074d65809a10b6bacc4410",
+      "ms": 194,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "NVK Sakha (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/LwXNUhf.png",
+      "url": "https://live-saha.cdnvideo.ru/saha/saha/playlist.m3u8",
+      "ms": 196,
+      "source": "Россия"
+    },
+    {
+      "name": "Kuraj-TV (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/hZXBD9F.png",
+      "url": "https://bsttv.bonus-tv.ru/cdn/kurai/playlist.m3u8",
+      "ms": 199,
+      "source": "Россия"
+    },
+    {
+      "name": "Vmeste-RF (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/KI1qZNc.png",
+      "url": "https://qcpdqumitwf.a.trbcdn.net/livemastersrt/pr4mw_lvie-vmesterf-srt.smil/playlist.m3u8",
+      "ms": 201,
+      "source": "Россия"
+    },
+    {
+      "name": "Rika TV (480p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/KJHWZ3B.png",
+      "url": "https://live-rikatv.cdnvideo.ru/rikatv/rikatv_tcode.sdp/playlist.m3u8",
+      "ms": 203,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Nika TV (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/dccsFAu.png",
+      "url": "https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8",
+      "ms": 205,
+      "source": "Россия"
+    },
+    {
+      "name": "Ugra-TV (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/561FRwI.png",
+      "url": "https://live-ugratv.cdnvideo.ru/ugratv/ugratv/playlist.m3u8",
+      "ms": 206,
+      "source": "Россия"
+    },
+    {
+      "name": "Antik Info TV (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/Q0qL60o.png",
+      "url": "https://dash4.antik.sk/live/test_infokanal_tizen/playlist.m3u8",
+      "ms": 207,
+      "source": "Новости"
+    },
+    {
+      "name": "Atfal & Mawaheb TV (1080p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/Y2BqP9m.png",
+      "url": "https://5aafcc5de91f1.streamlock.net/atfal1.com/atfal2/playlist.m3u8",
+      "ms": 214,
+      "source": "Детские"
+    },
+    {
+      "name": "Muz Soyuz (576p)",
+      "group": "Music;Religious",
+      "logo": "https://i.imgur.com/Puk1Bhx.png",
+      "url": "https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8",
+      "ms": 217,
+      "source": "Россия"
+    },
+    {
+      "name": "Telekanal Krasnodar (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/YVtutzp.png",
+      "url": "https://live-tvkrasnodar.cdnvideo.ru/tvkrasnodar/tvkrasnodar.sdp/playlist.m3u8",
+      "ms": 217,
+      "source": "Россия"
+    },
+    {
+      "name": "OTV-Prim (720p)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/2zd8trG.png",
+      "url": "https://jz2lo90hnpy.a.trbcdn.net/livemaster/yo8gr_live-5gorrrfpouq.smil/playlist.m3u8",
+      "ms": 219,
+      "source": "Россия"
+    },
+    {
+      "name": "Salyam (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/FfULLr1.png",
+      "url": "https://bsttv.bonus-tv.ru/cdn/salyam/playlist.m3u8",
+      "ms": 226,
+      "source": "Россия"
+    },
+    {
+      "name": "Zvezda HD (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/4PAcpfM.png",
+      "url": "https://tvzvezda.bonus-tv.ru/cdn/tvzvezda/playlist.m3u8",
+      "ms": 227,
+      "source": "Россия"
+    },
+    {
+      "name": "Nasha Tema (1080p)",
+      "group": "Outdoor;Travel",
+      "logo": "https://i.imgur.com/67ZVDKW.png",
+      "url": "https://fonbet.mediacdn.ru/live/nashatema/playlist.m3u8",
+      "ms": 229,
+      "source": "Россия"
+    },
+    {
+      "name": "Muzyka 1",
+      "group": "Music",
+      "logo": "https://i.imgur.com/DIKe5vA.png",
+      "url": "https://kino-1.catcast.tv/content/37745/index.m3u8",
+      "ms": 232,
+      "source": "Россия"
+    },
+    {
+      "name": "Hope Channel Russia (720p)",
+      "group": "Religious",
+      "logo": "https://i.imgur.com/ah6VnFJ.png",
+      "url": "https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8",
+      "ms": 233,
+      "source": "Россия"
+    },
+    {
+      "name": "Turan TV (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/VagTPMo.png",
+      "url": "https://fs.uplink.kz/turan_tv/mono.m3u8?token=onlinetv",
+      "ms": 233,
+      "source": "Казахстан"
+    },
+    {
+      "name": "TRT World",
+      "group": "UK",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/500px-TRT_World.svg.png",
+      "url": "https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8",
+      "ms": 234,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Moy mir (720p)",
+      "group": "Shop",
+      "logo": "https://www.cableman.ru/sites/default/files/MM-TV_logo-1%5B1509%5D.png",
+      "url": "https://moymir.ru/hls/onair.m3u8",
+      "ms": 236,
+      "source": "Россия"
+    },
+    {
+      "name": "NTM (720p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/AH50pGT.png",
+      "url": "https://live-ntm13.cdnvideo.ru/ntm13/smil:ntm13.smil/playlist.m3u8",
+      "ms": 239,
+      "source": "Россия"
+    },
+    {
+      "name": "Dagestan (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/jumkRvc.png",
+      "url": "https://dagestan.mediacdn.ru/cdn/dagestan/playlist.m3u8",
+      "ms": 240,
+      "source": "Россия"
+    },
+    {
+      "name": "Huzur TV (1080p)",
+      "group": "Religious",
+      "logo": "https://i.imgur.com/Abg1fct.png",
+      "url": "https://hls-mycdn08724960135.cdnvideo.ru/mycdn08724960135/stream1/playlist.m3u8",
+      "ms": 241,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "God Stands Kids Club TV Chinese",
+      "group": "Kids;Religious",
+      "logo": "https://i.imgur.com/FxDBbpz.jpeg",
+      "url": "https://online.godstands.tv:5443/WebRTCApp/streams/KidsChinese.m3u8",
+      "ms": 241,
+      "source": "Детские"
+    },
+    {
+      "name": "Otkritiy mir. Zdorove (576p)",
+      "group": "Lifestyle",
+      "logo": "https://i.imgur.com/7orZOJA.png",
+      "url": "https://v4.proofix.ru/0mir/index.m3u8",
+      "ms": 246,
+      "source": "Россия"
+    },
+    {
+      "name": "Rybalka i okhota (576p)",
+      "group": "Outdoor",
+      "logo": "https://www.cableman.ru/sites/default/files/rybalka_i_ohota_int.png",
+      "url": "https://fs.uplink.kz/ohota_i_ribalka/index.m3u8?token=onlinetv2",
+      "ms": 246,
+      "source": "Россия"
+    },
+    {
+      "name": "Nicktoons CIS (1080p)",
+      "group": "Kids",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Nicktoons_UK_Logo_2014.png",
+      "url": "https://stream8.cinerama.uz/1502/playlist.m3u8",
+      "ms": 246,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "FilmUADrama",
+      "group": "Movies;Series",
+      "logo": "https://i.imgur.com/Hnwsh5d.png",
+      "url": "https://dash2.antik.sk/live/test_film_drama_atktv/playlist.m3u8",
+      "ms": 249,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "TNV-Tatarstan (720p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/58u9TQT.png",
+      "url": "https://user91229.clients-cdnnow.ru/hls/user91229_1.m3u8",
+      "ms": 252,
+      "source": "Россия"
+    },
+    {
+      "name": "Shopping Live (720p)",
+      "group": "Shop",
+      "logo": "https://i.imgur.com/EMmGnjV.png",
+      "url": "https://nonmirya7cc.a.trbcdn.net/livemaster/tzrz5_sazlypl5ot.smil/playlist.m3u8",
+      "ms": 258,
+      "source": "Россия"
+    },
+    {
+      "name": "Telewizja Biznesowa (1080p)",
+      "group": "Poland",
+      "logo": "https://i.imgur.com/XC7i7ZL.png",
+      "url": "https://s-pl-01.mediatool.tv/playout/tbpl-abr/index.m3u8",
+      "ms": 261,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Heart Radio Aruba",
+      "group": "Music",
+      "logo": "https://i.imgur.com/MKZCskA.png",
+      "url": "https://live2.tensila.com/heart-v-1.heartar/hls/live/mystream.m3u8",
+      "ms": 262,
+      "source": "Музыка"
+    },
+    {
+      "name": "Star Family (1080p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/eGuGHnZ.png",
+      "url": "https://dash2.antik.sk/live/test_star_family_atktv/playlist.m3u8",
+      "ms": 263,
+      "source": "Россия"
+    },
+    {
+      "name": "Volleyball (1080p)",
+      "group": "Sports",
+      "logo": "https://smotreshka.server-img.lfstrm.tv/images/media/59/20/592021ab74bddb93907e2b18997215a9.png",
+      "url": "https://fonbet.mediacdn.ru/live/volleyball/playlist.m3u8",
+      "ms": 265,
+      "source": "Россия"
+    },
+    {
+      "name": "Zoopark (576p)",
+      "group": "Undefined",
+      "logo": "https://tv-stream.ru/uploads/Zoopark_300h300_zelenyj_vert_0f85755619.svg",
+      "url": "https://fs.uplink.kz/zoopark/mono.m3u8?token=onlinetv",
+      "ms": 268,
+      "source": "Россия"
+    },
+    {
+      "name": "Aqlvoy",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/ekF5cAi.png",
+      "url": "https://stream8.cinerama.uz/1205/tracks-v1a1/mono.m3u8",
+      "ms": 272,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Horoshee Kino (720p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/ZbOqfy4.png",
+      "url": "https://live-rian.cdnvideo.ru/rian/rus-radio/playlist.m3u8",
+      "ms": 273,
+      "source": "Россия"
+    },
+    {
+      "name": "Vitrina TV (720p)",
+      "group": "Shop",
+      "logo": "https://i.imgur.com/lzQsVfn.png",
+      "url": "https://live-11cinema.cdnvideo.ru/11cinema/11cinema/playlist.m3u8",
+      "ms": 275,
+      "source": "Россия"
+    },
+    {
+      "name": "Detskiy (576p)",
+      "group": "Kids",
+      "logo": "https://mt.media/upload/iblock/c22/pndw8yi2jwgppdrjikm3eusqp8087kr3.png",
+      "url": "https://stream8.cinerama.uz/1033/tracks-v1a1/mono.m3u8",
+      "ms": 276,
+      "source": "Россия"
+    },
+    {
+      "name": "Ohotnik i rybolov (576i)",
+      "group": "Outdoor",
+      "logo": "https://i.imgur.com/Bj1jI7F.png",
+      "url": "https://stream8.cinerama.uz/1413/tracks-v1a1/mono.m3u8",
+      "ms": 276,
+      "source": "Россия"
+    },
+    {
+      "name": "MBC 4",
+      "group": "United Arab Emirates",
+      "logo": "https://i.imgur.com/BcXASJp.png",
+      "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8",
+      "ms": 276,
+      "source": "Free-TV"
+    },
+    {
+      "name": "FON TV (1080p)",
+      "group": "Sports",
+      "logo": "https://play-lh.googleusercontent.com/J0YeRB884koVfecR2mp43Y2mbNtRVTSSOiq2U1gkITJ9IxzIM4VA71Rqbh3UlREI4mCnlxGHm4wxoujt5ZH1AQ",
+      "url": "https://fonstreams.mediacdn.ru/stream/fontvclear/playlist.m3u8",
+      "ms": 278,
+      "source": "Россия"
+    },
+    {
+      "name": "Hír FM",
+      "group": "Hungary",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0d/HirFM_logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "url": "https://budapest-cache-1.antik.sk/live/hir_rm/index.m3u8",
+      "ms": 279,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Kulinar TV (576p)",
+      "group": "Cooking",
+      "logo": "https://smotret.tv/images/kulinar-tv.webp",
+      "url": "https://api.alpaca.t62a.com/hls/9110/stream0.m3u8",
+      "ms": 280,
+      "source": "Россия"
+    },
+    {
+      "name": "Zdorovoe TV (576p)",
+      "group": "Lifestyle",
+      "logo": "https://i.imgur.com/jedtE5l.png",
+      "url": "https://stream8.cinerama.uz/1428/tracks-v1a1/mono.m3u8",
+      "ms": 282,
+      "source": "Россия"
+    },
+    {
+      "name": "Glazami Turista (576i)",
+      "group": "Travel",
+      "logo": "https://i.imgur.com/GXJKWdy.png",
+      "url": "https://stream8.cinerama.uz/1423/tracks-v1a1/mono.m3u8",
+      "ms": 284,
+      "source": "Россия"
+    },
+    {
+      "name": "Tamyr (576p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/Ia3acCB.png",
+      "url": "https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8",
+      "ms": 284,
+      "source": "Россия"
+    },
+    {
+      "name": "V gostyakh u skazki (1080p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/jNJkLHl.png",
+      "url": "https://stream8.cinerama.uz/1270/tracks-v1a1/mono.m3u8",
+      "ms": 285,
+      "source": "Россия"
+    },
+    {
+      "name": "Smotrim Chestnyy Detektiv (1080p)",
+      "group": "Series",
+      "logo": "https://cdn-st3.smotrim.ru/vh/pictures/svg/444/241/8.svg",
+      "url": "https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-01.smil/playlist.m3u8",
+      "ms": 288,
+      "source": "Россия"
+    },
+    {
+      "name": "Nashe Novoe Kino",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/IOxIsPj.png",
+      "url": "https://stream8.cinerama.uz/1051/tracks-v1a1/mono.m3u8",
+      "ms": 289,
+      "source": "Россия"
+    },
+    {
+      "name": "Sever",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/sTOQLYl.png",
+      "url": "https://2vko9pchwon.a.trbcdn.net/livemaster/8ilgc_cw63ucn03p.smil/playlist.m3u8",
+      "ms": 291,
+      "source": "Россия"
+    },
+    {
+      "name": "ducktv PLUS",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/RFhxfOx.png",
+      "url": "https://dash3.antik.sk/live/test_duck_plus/playlist.m3u8",
+      "ms": 295,
+      "source": "Детские"
+    },
+    {
+      "name": "Channel 8 Novosibirsk (480i)",
+      "group": "General",
+      "logo": "https://i.imgur.com/eHGETvU.png",
+      "url": "https://live-8knsk.cdnvideo.ru/8knsk/stream1/playlist.m3u8",
+      "ms": 296,
+      "source": "Россия"
+    },
+    {
+      "name": "Makon TV (576i)",
+      "group": "Entertainment",
+      "logo": "https://i.imgur.com/vCc0ED1.png",
+      "url": "https://stream8.cinerama.uz/1497/tracks-v1a1/mono.m3u8",
+      "ms": 301,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Muzhskoy HD (1080p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/xyztpBf.png",
+      "url": "https://fonbet.mediacdn.ru/live/muzhskoi/playlist.m3u8",
+      "ms": 303,
+      "source": "Россия"
+    },
+    {
+      "name": "360° News (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/YXDeX8q.png",
+      "url": "https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-03-srt.smil/playlist.m3u8",
+      "ms": 306,
+      "source": "Россия"
+    },
+    {
+      "name": "Eurasia (720p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/4JUHIVS.png",
+      "url": "https://infochh.trkeurasia.ru/hlsinfoch/infochhd.m3u8",
+      "ms": 309,
+      "source": "Россия"
+    },
+    {
+      "name": "ДІМ",
+      "group": "Ukraine",
+      "logo": "https://i.imgur.com/3cjaXIF.png",
+      "url": "https://dash2.antik.sk/live/telekanal_dim/playlist.m3u8",
+      "ms": 309,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Trace Sport Stars Russia (720p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/FabFP5A.png",
+      "url": "https://stream8.cinerama.uz/1274/tracks-v1a1/mono.m3u8",
+      "ms": 311,
+      "source": "Россия"
+    },
+    {
+      "name": "Channel 12 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/OA9hm6e.png",
+      "url": "https://12channel.bonus-tv.ru/cdn/12channel/playlist.m3u8",
+      "ms": 312,
+      "source": "Россия"
+    },
+    {
+      "name": "Qazaqstan International",
+      "group": "General",
+      "logo": "https://cdn.qazaqstan.tv/qazaqstan.png?w=420&h=196&format=png&resize=aspectfill&g=centeralt=",
+      "url": "https://stream8.cinerama.uz/1431/tracks-v1a1/mono.m3u8",
+      "ms": 313,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "BEATTV (1080p)",
+      "group": "Entertainment;Music",
+      "logo": "https://i.imgur.com/egK33Dj.png",
+      "url": "https://tv.beatfm.nl/live.m3u8",
+      "ms": 314,
+      "source": "Музыка"
+    },
+    {
+      "name": "Hobby Maker",
+      "group": "UK",
+      "logo": "https://i.imgur.com/VWHp5Tl.png",
+      "url": "https://lo3.gemporia.com/abrhobbymakerukgfx/smil:livestreamFullHD.smil/playlist.m3u8",
+      "ms": 318,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Muzyka Kino",
+      "group": "Music",
+      "logo": "https://i.imgur.com/2SG0Swa.png",
+      "url": "https://kino-1.catcast.tv/content/37739/index.m3u8",
+      "ms": 320,
+      "source": "Россия"
+    },
+    {
+      "name": "Ingushetia (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Fw2Hkk4.png",
+      "url": "https://ingushetia.mediacdn.ru/cdn/ingushetia/playlist.m3u8",
+      "ms": 324,
+      "source": "Россия"
+    },
+    {
+      "name": "RT Documentary Russian (1080p)",
+      "group": "Documentary",
+      "logo": "https://i.imgur.com/aeu5zIC.png",
+      "url": "https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8",
+      "ms": 325,
+      "source": "Россия"
+    },
+    {
+      "name": "Dasturxon TV (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/APM2ej5.jpeg",
+      "url": "https://stream8.cinerama.uz/1206/tracks-v1a1/playlist.m3u8",
+      "ms": 328,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "12 Tv Parma",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/xnUgx6b.png",
+      "url": "https://5929b138b139d.streamlock.net/12TVParma/livestream/playlist.m3u8",
+      "ms": 335,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Jibek Joly (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/SqyXtgK.png",
+      "url": "https://fs.uplink.kz/jibek_joly/mono.m3u8?token=onlinetv",
+      "ms": 339,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Yuvelirochka (576p)",
+      "group": "Shop",
+      "logo": "https://i.imgur.com/IcWtXCZ.png",
+      "url": "https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8",
+      "ms": 340,
+      "source": "Россия"
+    },
+    {
+      "name": "Al Arabiya Programs (1280p)",
+      "group": "Documentary;News",
+      "logo": "https://i.imgur.com/Hoc3cfO.png",
+      "url": "https://live.alarabiya.net/alarabiapublish/aaprograms.smil/playlist.m3u8",
+      "ms": 343,
+      "source": "Новости"
+    },
+    {
+      "name": "Arkhyz 24 (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/blAtdkJ.png",
+      "url": "https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8",
+      "ms": 344,
+      "source": "Россия"
+    },
+    {
+      "name": "Istoki (1080p)",
+      "group": "General",
+      "logo": "https://istoki.tv/local/templates/istoki_new/img/logo.png",
+      "url": "https://istoki.tv/live/stream1/playlist.m3u8",
+      "ms": 347,
+      "source": "Россия"
+    },
+    {
+      "name": "Sportivnyy (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/ujS6mMo.png",
+      "url": "https://live-3.otcnet.ru/sportivny/index.m3u8",
+      "ms": 347,
+      "source": "Россия"
+    },
+    {
+      "name": "Hit FM (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/QwqM5j6.png",
+      "url": "https://hitfm.nfthost.net/hls/hitfm/live_all/playlist.m3u8",
+      "ms": 347,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "BST (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/IDotHmQ.png",
+      "url": "https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8",
+      "ms": 349,
+      "source": "Россия"
+    },
+    {
+      "name": "Ryzhiy (576i)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/acrU2IE.png",
+      "url": "https://stream8.cinerama.uz/1407/tracks-v1a1/mono.m3u8",
+      "ms": 353,
+      "source": "Россия"
+    },
+    {
+      "name": "NASHE Music (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/ienkbOc.png",
+      "url": "https://cdn15.live-tv.cloud/ua_infinitas_tv/nashemus-abr/playlist.m3u8",
+      "ms": 354,
+      "source": "Музыка"
+    },
+    {
+      "name": "Astrahan 24 (720p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/9WcnjQN.png",
+      "url": "https://streaming.astrakhan.ru/astrakhan24/playlist.m3u8",
+      "ms": 355,
+      "source": "Россия"
+    },
+    {
+      "name": "Hero (720p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/4t5JQLY.png",
+      "url": "https://live-fi.tvkaista.net/hero/live.m3u8?hd=true",
+      "ms": 365,
+      "source": "Кино"
+    },
+    {
+      "name": "Moldova 1 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/ZbQY56v.png",
+      "url": "https://v0.trm.md/static/streaming-playlists/hls/9b79338b-1870-4cd7-91d4-0f6ce5cac7ca/master.m3u8",
+      "ms": 372,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "3ABN Russia (720p)",
+      "group": "Religious",
+      "logo": "https://i.imgur.com/4fhBbam.png",
+      "url": "https://hls.tv.3angels.ru/stream.m3u8",
+      "ms": 382,
+      "source": "Россия"
+    },
+    {
+      "name": "Afarin TV (720p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/6MnXD7g.png",
+      "url": "https://65f16f0fdfc51.streamlock.net/afarinTV/livestream/playlist.m3u8",
+      "ms": 386,
+      "source": "Детские"
+    },
+    {
+      "name": "NBA AntenaPlay (576p)",
+      "group": "Sports",
+      "logo": "https://assets.antenaplay.ro/2024/10/25/HmBMStln2f1qwN0tAXpG.png",
+      "url": "https://stream1.antenaplay.ro/promo/nba-meci/playlist.m3u8",
+      "ms": 387,
+      "source": "Спорт"
+    },
+    {
+      "name": "Silk Way Cinema (1080p)",
+      "group": "Movies",
+      "logo": "https://www.cableman.ru/sites/default/files/Silk-way-CINEMA.png",
+      "url": "https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8",
+      "ms": 389,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Rada TV (720p)",
+      "group": "Legislative",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Rada_TV_%282021%29.svg/960px-Rada_TV_%282021%29.svg.png",
+      "url": "https://cdn15.live-tv.cloud/ua_infinitas_tv/rada-abr/playlist.m3u8",
+      "ms": 390,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Astrahan.Ru TV (480p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/w4ys6zm.png",
+      "url": "https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8",
+      "ms": 391,
+      "source": "Россия"
+    },
+    {
+      "name": "Cool FM 98.9 (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/uGE6lZ2.png",
+      "url": "https://live2.tensila.com/cool-v-1.arubara/hls/master.m3u8",
+      "ms": 393,
+      "source": "Музыка"
+    },
+    {
+      "name": "Formula (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/fsqBn8G.png",
+      "url": "https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8",
+      "ms": 396,
+      "source": "Новости"
+    },
+    {
+      "name": "Astrahan.Ru Sport (720p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/BKaEtqL.png",
+      "url": "https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8",
+      "ms": 399,
+      "source": "Россия"
+    },
+    {
+      "name": "Univer TV (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/r3u0mxr.png",
+      "url": "https://cdn.universmotri.ru/live/smil:univer.smil/playlist.m3u8",
+      "ms": 400,
+      "source": "Россия"
+    },
+    {
+      "name": "Africa 24 English (1080p)",
+      "group": "News",
+      "logo": "https://africa24tv.com/wp-content/uploads/2023/12/logo-Africa24TVEnglish.png",
+      "url": "https://edge20.vedge.infomaniak.com/livecast/ik:africa24english/manifest.m3u8",
+      "ms": 401,
+      "source": "Новости"
+    },
+    {
+      "name": "Big Planet (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/wyuqWTR.png",
+      "url": "https://fs.uplink.kz/big_planet/mono.m3u8?token=onlinetv",
+      "ms": 402,
+      "source": "Россия"
+    },
+    {
+      "name": "Nickelodeon CIS (1080p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/E84jnP8.png",
+      "url": "https://stream8.cinerama.uz/1500/playlist.m3u8",
+      "ms": 405,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Audiokiss (1080p)",
+      "group": "Music",
+      "logo": "https://www.audiokiss.com/audiokiss/wp-content/uploads/sites/4/2021/02/Audio_kiss800-768x405.png",
+      "url": "https://master.tucableip.com/audiokisstv/index.m3u8",
+      "ms": 414,
+      "source": "Музыка"
+    },
+    {
+      "name": "Espansione Tv",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/mm9HKpD.png",
+      "url": "https://srvx1.selftv.video/espansione/smil:live.smil/playlist.m3u8",
+      "ms": 414,
+      "source": "Free-TV"
+    },
+    {
+      "name": "86 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/0dRS4Cb.png",
+      "url": "https://sitv.ru/hls/s86.m3u8",
+      "ms": 418,
+      "source": "Россия"
+    },
+    {
+      "name": "TV Puls HD (1080p)",
+      "group": "Poland",
+      "logo": "https://i.imgur.com/gXA7pai.png",
+      "url": "https://edge06.cdn.emitel.pl/bpk-tv/Puls2_HD/hbbtv-hls/index.m3u8",
+      "ms": 421,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Canale 2",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/ETqDkS1.png",
+      "url": "https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8",
+      "ms": 422,
+      "source": "Free-TV"
+    },
+    {
+      "name": "TV Rain (1080p)",
+      "group": "Undefined",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tvrain.svg/960px-Tvrain.svg.png",
+      "url": "https://wl.tvrain.tv/transcode/ngrp:ses_all/playlist.m3u8",
+      "ms": 425,
+      "source": "Россия"
+    },
+    {
+      "name": "Eurosport 1 Russia (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/olQJgm7.png",
+      "url": "https://s7.iptv-24.net/1439/playlist.m3u8",
+      "ms": 429,
+      "source": "Россия"
+    },
+    {
+      "name": "Zhivaya Planeta (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/onNv1tM.png",
+      "url": "https://stream8.cinerama.uz/1250/tracks-v1a1/mono.m3u8",
+      "ms": 429,
+      "source": "Россия"
+    },
+    {
+      "name": "Antenne Steiermark (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/qnappvd.jpeg",
+      "url": "https://60efd7a2b4d02.streamlock.net/a_steiermark/ngrp:livestream_all/playlist.m3u8",
+      "ms": 430,
+      "source": "Музыка"
+    },
+    {
+      "name": "Kriti 1",
+      "group": "Greece",
+      "logo": "https://i.imgur.com/C1ucQeC.png",
+      "url": "https://livetv.streams.ovh:8081/kriti/index.m3u8",
+      "ms": 430,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Arsenal (576p)",
+      "group": "Documentary",
+      "logo": "https://i.imgur.com/DBpVeb0.png",
+      "url": "https://stream8.cinerama.uz/1414/tracks-v1a1/mono.m3u8",
+      "ms": 431,
+      "source": "Россия"
+    },
+    {
+      "name": "NovgorOblTV",
+      "group": "General",
+      "logo": "https://i.imgur.com/2JspHVY.png",
+      "url": "https://rt-nw-novg-htlive.cdn.ngenix.net/hls/CH_R02_NOVGORODTV/variant.m3u8",
+      "ms": 434,
+      "source": "Россия"
+    },
+    {
+      "name": "Moldova 2 (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/Hv6Nk8A.png",
+      "url": "https://v0.trm.md/static/streaming-playlists/hls/d5fafab0-9c37-4746-9e7a-b2d6c0427015/master.m3u8",
+      "ms": 436,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Tom And Jerry (720p)",
+      "group": "Kids",
+      "logo": "https://gia.tv/streams/pptv/208314.jpg?1750373428",
+      "url": "https://183.giatvcdn.com/giatvplayout7/giatv-208314/playlist.m3u8",
+      "ms": 436,
+      "source": "Детские"
+    },
+    {
+      "name": "Radio Tele Hit (480p)",
+      "group": "Music",
+      "logo": "https://i.ibb.co/Gt2QDgf/cropped-transparent2-103x70.png",
+      "url": "https://59d39900ebfb8.streamlock.net/RadioTelehit/RadioTelehit/playlist.m3u8",
+      "ms": 445,
+      "source": "Музыка"
+    },
+    {
+      "name": "Al Mayadeen TV (576p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/GtQOKeW.png",
+      "url": "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8",
+      "ms": 449,
+      "source": "Новости"
+    },
+    {
+      "name": "360° (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/VTJqdoX.png",
+      "url": "https://cdn-evacoder-tv.facecast.io/evacoder_hls_hi/CkxfR1xNUAJwTgtXTBZTAJli/index.m3u8",
+      "ms": 450,
+      "source": "Россия"
+    },
+    {
+      "name": "Lugansk 24",
+      "group": "General",
+      "logo": "https://i.imgur.com/AihoVc0.png",
+      "url": "https://streaming.televizor-24-tochka.ru/live/29.m3u8",
+      "ms": 451,
+      "source": "Россия"
+    },
+    {
+      "name": "RT Balkan (1080p)",
+      "group": "News",
+      "logo": "https://pbs.twimg.com/media/FiHmjBrWIBsN41d.jpg",
+      "url": "https://rt-srb.rttv.com/dvr/rtbalkan/playlist.m3u8",
+      "ms": 451,
+      "source": "Россия"
+    },
+    {
+      "name": "Primocanale",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/xWF1A1U.png",
+      "url": "https://msh0203.stream.seeweb.it/live/flv:stream2.sdp/playlist.m3u8",
+      "ms": 454,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Gulli Girl (720p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/lbViDuC.png",
+      "url": "https://stream8.cinerama.uz/1445/tracks-v1a1/mono.m3u8",
+      "ms": 455,
+      "source": "Россия"
+    },
+    {
+      "name": "MovieSphere UK (1080p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/h1ejU90.png",
+      "url": "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8",
+      "ms": 455,
+      "source": "Кино"
+    },
+    {
+      "name": "Ocko Gold (540p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/nrWNyLc.jpg",
+      "url": "https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8",
+      "ms": 460,
+      "source": "Музыка"
+    },
+    {
+      "name": "Muzangala TV (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/fBeaJoS.png",
+      "url": "https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8",
+      "ms": 461,
+      "source": "Музыка"
+    },
+    {
+      "name": "O'zbekiston (576p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/QUIIhTD.png",
+      "url": "https://stream8.cinerama.uz/1001/tracks-v1a1/playlist.m3u8",
+      "ms": 463,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Al Iraqia News (720p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/feQTXeZ.jpg",
+      "url": "https://imn-live.esite-lab.com/hls/iraqia-news.m3u8",
+      "ms": 463,
+      "source": "Новости"
+    },
+    {
+      "name": "Channel 5 International (576i)",
+      "group": "General",
+      "logo": "https://i.imgur.com/8VKc2Ya.png",
+      "url": "https://cdn4.skygo.mn/live/disk1/Channel_5/HLSv3-FTA/Channel_5.m3u8",
+      "ms": 465,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "+TV (576p)",
+      "group": "General",
+      "logo": "https://static.tildacdn.biz/tild6366-6336-4230-b562-656138633562/___TV-___188-76.webp",
+      "url": "https://stream.plustv.by/plustv-web/plustv/playlist.m3u8",
+      "ms": 478,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Channel 9 (Israel) (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/pttM3KQ.png",
+      "url": "https://contact.gostreaming.tv/Con-11/index.m3u8",
+      "ms": 483,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "IBC 24 (1080p)",
+      "group": "News",
+      "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_IBC24/images/LOGO_HD/image.png",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0bfbd0b9de7f4407949202296560c0fe/index.m3u8",
+      "ms": 483,
+      "source": "Новости"
+    },
+    {
+      "name": "Radio 1 (Russia) (720p)",
+      "group": "General",
+      "logo": "https://radiopotok.ru/f/station/512/1812.png",
+      "url": "https://stream.radio1.ru/memfs/49dee7fe-77ba-4e6b-8cdc-fa840535b242.m3u8",
+      "ms": 484,
+      "source": "Россия"
+    },
+    {
+      "name": "Dijlah TV",
+      "group": "Iraq",
+      "logo": "https://i.imgur.com/FJEeYiz.png",
+      "url": "https://ghaasiflu.online/Dijlah/index.m3u8",
+      "ms": 491,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Groznyj",
+      "group": "General",
+      "logo": "https://i.imgur.com/yrN0Vl6.png",
+      "url": "https://balancer.facecast.io/evacoder_hls_hi/UUMLQVAYVlZyH14GRENQVV0G/2/720-3.m3u8",
+      "ms": 492,
+      "source": "Россия"
+    },
+    {
+      "name": "Esport3 Originals (1080p)",
+      "group": "Public;Sports",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Esport3.svg/960px-Esport3.svg.png",
+      "url": "https://directes-tv-int.3catdirectes.cat/live-content/esport3-hls/master.m3u8",
+      "ms": 492,
+      "source": "Спорт"
+    },
+    {
+      "name": "MBC Bollywood (1080p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/TTAGFHG.png",
+      "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8",
+      "ms": 496,
+      "source": "Кино"
+    },
+    {
+      "name": "Afra Film",
+      "group": "Movies",
+      "logo": "",
+      "url": "https://afrafhls.wns.live/hls/stream.m3u8",
+      "ms": 499,
+      "source": "Кино"
+    },
+    {
+      "name": "Samara-GIS (1080p)",
+      "group": "Undefined",
+      "logo": "https://samaragis.ru/wp-includes/images/logo.png",
+      "url": "https://tv.samaragis.ru/new/new/tracks-v1a1/mono.m3u8",
+      "ms": 504,
+      "source": "Россия"
+    },
+    {
+      "name": "Priklyucheniya (576p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/qQ6pPPQ.png",
+      "url": "https://stream8.cinerama.uz/1420/tracks-v1a1/mono.m3u8",
+      "ms": 505,
+      "source": "Россия"
+    },
+    {
+      "name": "MyZen TV (720p)",
+      "group": "Relax",
+      "logo": "https://i.imgur.com/fIi8o0C.png",
+      "url": "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/myzen_tv/live.livx/playlist.m3u8",
+      "ms": 507,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "TGCOM 24",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/xautVD8.png",
+      "url": "https://d3k8wzt41aflvx.cloudfront.net/TGCOM24/Live.m3u8",
+      "ms": 511,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Chamame TV",
+      "group": "Music",
+      "logo": "https://i.imgur.com/JigzJck.png",
+      "url": "https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8",
+      "ms": 512,
+      "source": "Музыка"
+    },
+    {
+      "name": "Travel TV",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/aXAUyLN.png",
+      "url": "https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8",
+      "ms": 520,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Asharq News (1080p)",
+      "group": "Business;News",
+      "logo": "https://i.imgur.com/bqRC3sl.png",
+      "url": "https://live-news.asharq.com/asharq.m3u8",
+      "ms": 523,
+      "source": "Новости"
+    },
+    {
+      "name": "Tele Radio Ercolano",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/YPuoy8N.jpg",
+      "url": "https://rst2.saiuzwebnetwork.it:8081/teleradioercolano/index.m3u8",
+      "ms": 531,
+      "source": "Free-TV"
+    },
+    {
+      "name": "24 Horas Catalunya (720p)",
+      "group": "News;Public",
+      "logo": "https://i.ibb.co/21sXZ3GT/24h.png",
+      "url": "https://rtvelivestream.rtve.es/rtvesec/cat/24h_cat_main_dvr.m3u8",
+      "ms": 532,
+      "source": "Новости"
+    },
+    {
+      "name": "Rai Italia Nord America",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/riXPOTh.png",
+      "url": "https://d3k8wzt41aflvx.cloudfront.net/RAIUSA/Live.m3u8",
+      "ms": 543,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Cartoon Network (Pakistan)",
+      "group": "Animation;Kids",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+      "url": "https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/live/87H/chunks.m3u8",
+      "ms": 547,
+      "source": "Детские"
+    },
+    {
+      "name": "Super Toons (1080p)",
+      "group": "Kids",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/02/SuperToons.png",
+      "url": "https://d3bxvshzgfq6in.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8a0c583l9gryw/feed/samsung/streams/SUPERTOONS_EN/master.m3u8?token=737aa2c3f17862a448f403cd2ac2b5ef1a0c413e1cf080a13a19cea99119221f",
+      "ms": 547,
+      "source": "Детские"
+    },
+    {
+      "name": "Benin TV Junior (720p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/bWxjtuJ.png",
+      "url": "https://srtblive.streamakaci.tv/ortb/ortb2-multi/playlist_dvr.m3u8",
+      "ms": 548,
+      "source": "Детские"
+    },
+    {
+      "name": "FILMBOX+ Love & Crime Adria (720p)",
+      "group": "Movies",
+      "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
+      "url": "https://webtvstream.bhtelecom.ba/filmbox_stars.m3u8",
+      "ms": 552,
+      "source": "Кино"
+    },
+    {
+      "name": "Kuriakos Kids (1080p)",
+      "group": "Animation;Kids;Religious",
+      "logo": "https://i.imgur.com/SRX6EPY.png",
+      "url": "https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8",
+      "ms": 552,
+      "source": "Детские"
+    },
+    {
+      "name": "Baraka Television (720p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/IKXddHN.png",
+      "url": "https://stream.berosat.live:19360/baraka-hd/baraka-hd.m3u8",
+      "ms": 553,
+      "source": "Новости"
+    },
+    {
+      "name": "Start Triumf (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/L9jTieL.png",
+      "url": "https://bl.webcaster.pro/media/playlist/free_fe8dc1b768a84b8b0333db826471f17e_hd/33_85479982/1080p/8666c3e935faf6ef47ffd601e8e48868/4821408969.m3u8",
+      "ms": 555,
+      "source": "Россия"
+    },
+    {
+      "name": "Observator News (360p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/f6xEIAr.png",
+      "url": "https://live77cdn2.antenaplay.ro/live_ObservatorNews/live_ObservatorNews.m3u8",
+      "ms": 555,
+      "source": "Новости"
+    },
+    {
+      "name": "Indywood TV (720p)",
+      "group": "Movies;News",
+      "logo": "https://i.ibb.co/jT3NCPp/logo-tv.png",
+      "url": "https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8",
+      "ms": 562,
+      "source": "Новости"
+    },
+    {
+      "name": "Taraqqiyot TV",
+      "group": "General",
+      "logo": "https://i.imgur.com/V3rtPEl.jpg",
+      "url": "https://stream8.cinerama.uz/1204/tracks-v1a1/mono.m3u8",
+      "ms": 569,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Radio Immagine Tv",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/iQlXRAB.png",
+      "url": "https://media.velcom.it:8081/RadioImmagineTV/index.fmp4.m3u8",
+      "ms": 574,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Moon TV (576p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/3l25EZI.png",
+      "url": "https://cdn.pishow.tv/ott/live/1121/master.m3u8",
+      "ms": 577,
+      "source": "Новости"
+    },
+    {
+      "name": "Qazaqstan (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/oI8g396.png",
+      "url": "https://vs137.vcdn.biz/6aa0d03eb8d337c5a12c8275477af53a_megogo/live/hls/b/700_2490_4000/u_sid/0/o/229009131/rsid/15fbd560-a86a-45ca-8058-baf9f5f61c8e/u_uid/0/u_vod/0/u_device/cms_webandroid/u_devicekey/_site_mobile/lip/45.80.208.174*asn/u_srvc/84416/u_did/web_MjE7M10AtBKsWN3CHzhzNBgiG7LkULPx/type.live/chunklist-sid8840242905769027046-b4000000.m3u8",
+      "ms": 578,
+      "source": "Казахстан"
+    },
+    {
+      "name": "Sangeet Bhojpuri (576p)",
+      "group": "Music",
+      "logo": "https://dtil.tmsimg.com/assets/s143757_ld_h15_aa.png?lock=720x540",
+      "url": "https://fta.ektv.in/live/349/master.m3u8",
+      "ms": 582,
+      "source": "Музыка"
+    },
+    {
+      "name": "Reino Infantil",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/oAygpDw.png",
+      "url": "https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8",
+      "ms": 584,
+      "source": "Детские"
+    },
+    {
+      "name": "TV3Cat Ⓖ",
+      "group": "Spain",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/TV3CAT.svg/500px-TV3CAT.svg.png",
+      "url": "https://directes3-tv-int.3catdirectes.cat/live-content/tvi-hls/master.m3u8",
+      "ms": 596,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Rossiya 1 Vainah (576i)",
+      "group": "General",
+      "logo": "https://i.imgur.com/GnbNG0r.png",
+      "url": "https://live.chechensoft.ru/vainahtv/ngrp:vaynahtv_all/playlist.m3u8",
+      "ms": 597,
+      "source": "Россия"
+    },
+    {
+      "name": "Cine Friki (1080p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/b3Ospym.png",
+      "url": "https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8",
+      "ms": 608,
+      "source": "Кино"
+    },
+    {
+      "name": "UzReport TV (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/Bch2RHc.jpg",
+      "url": "https://stream8.cinerama.uz/1015/tracks-v1a1/playlist.m3u8",
+      "ms": 609,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Abai TV (720p)",
+      "group": "Culture",
+      "logo": "https://i.imgur.com/Nw2R7Dq.png",
+      "url": "https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8",
+      "ms": 614,
+      "source": "Казахстан"
+    },
+    {
+      "name": "Raj Digital Plus (1080p)",
+      "group": "Movies",
+      "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png",
+      "url": "https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8",
+      "ms": 620,
+      "source": "Кино"
+    },
+    {
+      "name": "Boomerang (Thailand)",
+      "group": "Kids",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/960px-Boomerang_2014_logo.svg.png",
+      "url": "https://live-us1.thaimomo.com/live-as/chboomerang-2/chunklist_w135479847.m3u8",
+      "ms": 620,
+      "source": "Детские"
+    },
+    {
+      "name": "Kuban 24 SD",
+      "group": "General",
+      "logo": "https://i.imgur.com/atzrXcz.png",
+      "url": "https://rt-sth-krdar-htlive.cdn.ngenix.net/hls/CH_R04_KUBAN24/variant.m3u8",
+      "ms": 625,
+      "source": "Россия"
+    },
+    {
+      "name": "Silk Way (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/SJNDksF.png",
+      "url": "https://hlspackager.akamaized.net/live/DB/SILKWAY/SILKWAY/SILKWAY.m3u8",
+      "ms": 626,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "MMA-TV.com (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/QhdxNsB.png",
+      "url": "https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8",
+      "ms": 628,
+      "source": "Россия"
+    },
+    {
+      "name": "NTI Canale 271",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/zlmcUe0.jpg",
+      "url": "https://www.ntimedia.it/video/S0B/S0B_master.m3u8",
+      "ms": 629,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Tagesschau24",
+      "group": "Germany",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tagesschau24-2012.svg/500px-Tagesschau24-2012.svg.png",
+      "url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8",
+      "ms": 631,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Grjngo Western Movies (720p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/wFqhK3p.png",
+      "url": "https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8",
+      "ms": 633,
+      "source": "Кино"
+    },
+    {
+      "name": "City TV (Bulgaria) (576p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/mFL452f.png",
+      "url": "https://tv.city.bg/play/tshls/citytv/index.m3u8",
+      "ms": 636,
+      "source": "Музыка"
+    },
+    {
+      "name": "RTV Oost",
+      "group": "Netherlands",
+      "logo": "https://i.imgur.com/8ropV29.png",
+      "url": "https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8",
+      "ms": 636,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Balapan HD (1080p)",
+      "group": "Kids",
+      "logo": "https://vote.rtrk.kz/img/balapan-logo.png",
+      "url": "https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8",
+      "ms": 644,
+      "source": "Казахстан"
+    },
+    {
+      "name": "Telestar1",
+      "group": "Romania",
+      "logo": "https://i.imgur.com/UZQjEsd.png",
+      "url": "https://dvb.tennet.ro/mobile_tv/telestar.m3u8",
+      "ms": 649,
+      "source": "Free-TV"
+    },
+    {
+      "name": "M-1 (480p)",
+      "group": "Music",
+      "logo": "https://i.ibb.co/gb4NmNHT/M1-2025.png",
+      "url": "https://m-1.data.lt/m-1/smil:m-1.smil/playlist.m3u8",
+      "ms": 655,
+      "source": "Музыка"
+    },
+    {
+      "name": "Al Saudiya Alaan",
+      "group": "Saudi Arabia",
+      "logo": "https://i.imgur.com/sEOjApe.png",
+      "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-ksa-now/71ed3aa814c643306c0a8bc4fcc7d17f/index.m3u8",
+      "ms": 655,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Abaza TV",
+      "group": "General",
+      "logo": "https://i.imgur.com/7Jo7UAf.png",
+      "url": "https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8",
+      "ms": 663,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Palitra News (480p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/BW95PMF.png",
+      "url": "https://live.palitranews.ge/hls/palitratv/index.m3u8",
+      "ms": 668,
+      "source": "Новости"
+    },
+    {
+      "name": "NW Info 2 (576p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/0W4GqFD.png",
+      "url": "https://hls.newworldtv.com/nw-info-2/video/live.m3u8",
+      "ms": 672,
+      "source": "Новости"
+    },
+    {
+      "name": "Mana Tserkov' Onlayn (1080p)",
+      "group": "Religious",
+      "logo": "https://i.imgur.com/PruXLqS.png",
+      "url": "https://w2.manasat.com/tserkov-online/smil:tserkov-online.smil/playlist.m3u8",
+      "ms": 676,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "TSV (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/6p4weSK.png",
+      "url": "https://tsv.md/stream/hls/tsv-online/index.m3u8",
+      "ms": 680,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "The Voice TV (1080p)",
+      "group": "News",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/thevoicetv.png",
+      "url": "https://legitpro.co.in/thevoicetv/thevoicetv/index.m3u8",
+      "ms": 682,
+      "source": "Новости"
+    },
+    {
+      "name": "Kiss Kiss Napoli TV (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/RsGiBwE.png",
+      "url": "https://58f12ffd2447a.streamlock.net/KKTVNapoli/livestream/playlist.m3u8",
+      "ms": 693,
+      "source": "Музыка"
+    },
+    {
+      "name": "Gulistan News (1080p)",
+      "group": "News",
+      "logo": "https://dtil.tmsimg.com/assets/s143097_ld_h15_aa.png?lock=720x540",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/030a117c40d84ca99ac8927d3e2a1eec/index.m3u8",
+      "ms": 697,
+      "source": "Новости"
+    },
+    {
+      "name": "Das Erste Ⓖ",
+      "group": "Germany",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Das_Erste_2014.svg/500px-Das_Erste_2014.svg.png",
+      "url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8",
+      "ms": 697,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Capital TV",
+      "group": "News",
+      "logo": "https://i.imgur.com/UxAE5O4.png",
+      "url": "https://cdn4.mjunoon.tv:8087/streamtest/111M/chunks.m3u8",
+      "ms": 703,
+      "source": "Новости"
+    },
+    {
+      "name": "Ulytau",
+      "group": "General",
+      "logo": "https://i.imgur.com/jTL6TvC.png",
+      "url": "https://ulytau.tv/hls/master.m3u8",
+      "ms": 710,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "VIVA Russia (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/OFhQQCD.png",
+      "url": "https://183.giatvcdn.com/ssh101/ssh101/vivarussia/playlist.m3u8",
+      "ms": 718,
+      "source": "Россия"
+    },
+    {
+      "name": "DW Russian (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/8MRNFb9.png",
+      "url": "https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/master.m3u8",
+      "ms": 724,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Radio24-IlSole24OreTV",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/NTqrdWW.png",
+      "url": "https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8",
+      "ms": 725,
+      "source": "Free-TV"
+    },
+    {
+      "name": "ETV+ (720p)",
+      "group": "Entertainment",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/ETV%2B_logo.png",
+      "url": "https://sb.err.ee/live/etvpluss.m3u8",
+      "ms": 731,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Balle Balle (1080p)",
+      "group": "Music",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png",
+      "url": "https://mcncdndigital.com/worldpunjabitv/index.m3u8",
+      "ms": 736,
+      "source": "Музыка"
+    },
+    {
+      "name": "Iran International (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/55RpaF3.png",
+      "url": "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8",
+      "ms": 737,
+      "source": "Новости"
+    },
+    {
+      "name": "TVP World",
+      "group": "News",
+      "logo": "https://i.imgur.com/lB4MgRI.png",
+      "url": "https://dash2.antik.sk/live/test_tvp_world/playlist.m3u8",
+      "ms": 742,
+      "source": "Новости"
+    },
+    {
+      "name": "Svoyo TV (1080p)",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/3cP2fmX.png",
+      "url": "https://svoetv.mediacdn.ru/cdn/svoetv/playlist.m3u8",
+      "ms": 747,
+      "source": "Россия"
+    },
+    {
+      "name": "Eurosport 2 Russia (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/f56dHgR.png",
+      "url": "https://s7.iptv-24.net/1452/playlist.m3u8",
+      "ms": 751,
+      "source": "Россия"
+    },
+    {
+      "name": "Halab Today TV (1080p)",
+      "group": "News",
+      "logo": "https://pbs.twimg.com/profile_images/1779495135841075200/aPINrLwe_400x400.png",
+      "url": "https://halabtoday-live.lg.mncdn.com/halabtoday/livestream/playlist.m3u8",
+      "ms": 751,
+      "source": "Новости"
+    },
+    {
+      "name": "JapanimTV (1080p)",
+      "group": "Animation;Kids",
+      "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/6b97e19f-4243-4d48-b794-ff8cf54d795f-profile_image-300x300.png",
+      "url": "https://foxkidstv.be:3369/stream/play.m3u8",
+      "ms": 756,
+      "source": "Детские"
+    },
+    {
+      "name": "TRC Santeramo",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/VbYdS8P.jpg",
+      "url": "https://stream7.livinlive.it/trc/trc/playlist.m3u8",
+      "ms": 762,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Unbeaten (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/LmkNt3v.png",
+      "url": "https://d1t5afz6qed3xk.cloudfront.net/Unbeaten.m3u8",
+      "ms": 771,
+      "source": "Спорт"
+    },
+    {
+      "name": "Magnificent Movies Network",
+      "group": "Movies;Shop",
+      "logo": "https://i.imgur.com/CXjo8kn.png",
+      "url": "https://mmn1.b-cdn.net/hls/MMN-HLS.m3u8",
+      "ms": 779,
+      "source": "Кино"
+    },
+    {
+      "name": "World of Freesports (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/lta5Mog.png",
+      "url": "https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8",
+      "ms": 782,
+      "source": "Спорт"
+    },
+    {
+      "name": "Discovery Channel",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/5IxIFJ0.png",
+      "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DISCOVERYCHANNEL/CMAF/index.m3u8",
+      "ms": 782,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Kanizsa TV",
+      "group": "Hungary",
+      "logo": "",
+      "url": "https://cloudfront44.lexanetwork.com:1344/freerelay/kanizsavtv.sdp/playlist.m3u8",
+      "ms": 785,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Porto Canal Ⓢ",
+      "group": "Portugal",
+      "logo": "https://i.imgur.com/wsyvP2H.png",
+      "url": "https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/smil:pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8",
+      "ms": 798,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Watan TV",
+      "group": "Egypt",
+      "logo": "",
+      "url": "https://rp.tactivemedia.com/watantv_source/live/playlist.m3u8",
+      "ms": 803,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Current Time TV (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/hKo8ApU.png",
+      "url": "https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8",
+      "ms": 807,
+      "source": "Россия"
+    },
+    {
+      "name": "Chasse & Peche (540p)",
+      "group": "Outdoor",
+      "logo": "https://i.imgur.com/ZIS2ZQ1.png",
+      "url": "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/chasse_et_peche/live.livx/playlist.m3u8",
+      "ms": 807,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Argus News (576p)",
+      "group": "News",
+      "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ARGUS/images/LOGO_HD/image.png",
+      "url": "https://d1msejlow1t3l4.cloudfront.net/fta/argusnews/playlist.m3u8",
+      "ms": 815,
+      "source": "Новости"
+    },
+    {
+      "name": "Ninja Kidz TV (1080p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/7EngqUi.png",
+      "url": "https://playworksdigital-ninjakidztv-1-us.vizio.wurl.tv/playlist.m3u8",
+      "ms": 815,
+      "source": "Детские"
+    },
+    {
+      "name": "B1",
+      "group": "News",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/B1_TV_logo.svg/960px-B1_TV_logo.svg.png",
+      "url": "https://hls02ns.antenaplay.ro/hls/b1-tv-hd/index.m3u8",
+      "ms": 817,
+      "source": "Новости"
+    },
+    {
+      "name": "El Chavo TV (720p)",
+      "group": "Kids",
+      "logo": "https://gia.tv/streams/pptv/211465.png",
+      "url": "https://183.giatvcdn.com/giatvplayout7/giatv-211465/playlist.m3u8",
+      "ms": 821,
+      "source": "Детские"
+    },
+    {
+      "name": "ACE Country Radio KPVM-LD (480p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/iPtuku6.png",
+      "url": "https://2-fss-1.streamhoster.com/pl_122/206858-4412960-1/playlist.m3u8",
+      "ms": 835,
+      "source": "Музыка"
+    },
+    {
+      "name": "Bollywood HD Russia (576p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/scDKOLS.png",
+      "url": "https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8",
+      "ms": 843,
+      "source": "Россия"
+    },
+    {
+      "name": "Al Jazeera Mubasher (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/X80DQvF.png",
+      "url": "https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8",
+      "ms": 849,
+      "source": "Новости"
+    },
+    {
+      "name": "Tequila Music TV",
+      "group": "Music",
+      "logo": "https://tequilamusic.net/imagini/tv-logo.png",
+      "url": "https://stream.tequilamusic.net/hls/tequila_tv.m3u8",
+      "ms": 849,
+      "source": "Музыка"
+    },
+    {
+      "name": "Mh 1 Music (720p)",
+      "group": "Music",
+      "logo": "https://dtil.tmsimg.com/assets/s143539_ld_h15_aa.png?lock=720x540",
+      "url": "https://livestream.jswk.online/playlisttest/live/playlist.m3u8",
+      "ms": 853,
+      "source": "Музыка"
+    },
+    {
+      "name": "Rai News 24 HD (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/n2u57y3.png",
+      "url": "https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8",
+      "ms": 869,
+      "source": "Новости"
+    },
+    {
+      "name": "Star",
+      "group": "Greece",
+      "logo": "https://i.imgur.com/Hp0stVQ.png",
+      "url": "https://livestar.siliconweb.com/starvod/star4/star4.m3u8",
+      "ms": 870,
+      "source": "Free-TV"
+    },
+    {
+      "name": "India Daily Live (1080p)",
+      "group": "News",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/India_Daily_24x7.png",
+      "url": "https://indiadaily.ottlive.co.in/indiadailylive/index.m3u8",
+      "ms": 871,
+      "source": "Новости"
+    },
+    {
+      "name": "Oman Sports TV (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/1omi7p8.png",
+      "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8",
+      "ms": 872,
+      "source": "Спорт"
+    },
+    {
+      "name": "Maxcine 2 (720p)",
+      "group": "Movies",
+      "logo": "https://gia.tv/streams/pptv/209163.png",
+      "url": "https://183.giatvcdn.com/giatvplayout7/giatv-209163/playlist.m3u8",
+      "ms": 879,
+      "source": "Кино"
+    },
+    {
+      "name": "TRT Arabi (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/dEfI2M9.png",
+      "url": "https://tv-trtarabi.medya.trt.com.tr/master.m3u8",
+      "ms": 886,
+      "source": "Новости"
+    },
+    {
+      "name": "Mr Bean Animated IT (1080p)",
+      "group": "Animation;Kids",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/25/Mr._Bean_Animated_Series_stacked_logo.png",
+      "url": "https://amg00627-amg00627c29-rakuten-it-3989.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanitcc-rakutenit/playlist.m3u8",
+      "ms": 886,
+      "source": "Детские"
+    },
+    {
+      "name": "16TV",
+      "group": "Hungary",
+      "logo": "https://i.imgur.com/7ZPYJJ0.jpg",
+      "url": "https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8",
+      "ms": 887,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Vaanavil TV (720p)",
+      "group": "Music",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Vaanavil_TV.png",
+      "url": "https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8",
+      "ms": 889,
+      "source": "Музыка"
+    },
+    {
+      "name": "Classique TV (360p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/rHxcraT.png",
+      "url": "https://stmv1.srvif.com/classique/classique/playlist.m3u8",
+      "ms": 898,
+      "source": "Кино"
+    },
+    {
+      "name": "Bharat24 (1080p)",
+      "group": "News",
+      "logo": "https://dtil.tmsimg.com/assets/s142710_ld_h15_aa.png?lock=720x540",
+      "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2774c390ad884e06a7b0257c8489e23d/index.m3u8",
+      "ms": 901,
+      "source": "Новости"
+    },
+    {
+      "name": "MBC Mood (1080p)",
+      "group": "Music",
+      "logo": "https://shahid.mbc.net/mediaObject/c2b6a882-458b-446e-b0fe-f97f7992149a?height=auto&width=144&croppingPoint=&version=1&type=png",
+      "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-mood/78367bf48ccdba501d0d014a10c21031/index.m3u8",
+      "ms": 908,
+      "source": "Музыка"
+    },
+    {
+      "name": "Nicktoons (France) (720p)",
+      "group": "Kids",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/be/Nicktoons_Logo_2023.svg",
+      "url": "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/nicktoons/live.livx/playlist.m3u8",
+      "ms": 908,
+      "source": "Детские"
+    },
+    {
+      "name": "CINDIE TV (1080p)",
+      "group": "Movies",
+      "logo": "https://a.jsrdn.com/hls/23208/cindie-tv/logo_20250225_222520_68.png",
+      "url": "https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8",
+      "ms": 914,
+      "source": "Кино"
+    },
+    {
+      "name": "KTV News (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/erZ0Ol1.png",
+      "url": "https://kwtkbta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist.m3u8",
+      "ms": 917,
+      "source": "Новости"
+    },
+    {
+      "name": "HMI PROMZ NEWS (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/gwPaw3v.png",
+      "url": "https://video1.getstreamhosting.com:1936/8326/8326/playlist.m3u8",
+      "ms": 917,
+      "source": "Музыка"
+    },
+    {
+      "name": "NTV Sledstviye veli (1080p)",
+      "group": "Undefined",
+      "logo": "https://image.tmdb.org/t/p/original/qGCnptpQ9slUAoZ7e5y1Dk4TtjJ.png",
+      "url": "https://mhd116.iptv2022.com/x/t4hRFz1R89Q6kjp3CL3WVQ,1792610109/streaming/sledstvie_veli_hd/324/1/index.m3u8",
+      "ms": 922,
+      "source": "Россия"
+    },
+    {
+      "name": "Nidae AlIslam Radio (1080p)",
+      "group": "Music",
+      "logo": "https://aloula.faulio.com/storage/mediagallery/0f/c5/fullhd_5da380cdfc304fd7d4672a83aeb6c62bc1d3d3e8.png",
+      "url": "https://live.kwikmotion.com/sbrksanedaradiolive/srpksanedaradio/playlist.m3u8",
+      "ms": 924,
+      "source": "Музыка"
+    },
+    {
+      "name": "98.1 Pearl FM (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/GY750xh.jpg",
+      "url": "https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8",
+      "ms": 926,
+      "source": "Музыка"
+    },
+    {
+      "name": "Action (540p)",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/Zv9VsVq.png",
+      "url": "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/action/live.livx/playlist.m3u8",
+      "ms": 928,
+      "source": "Кино"
+    },
+    {
+      "name": "Fuego TV",
+      "group": "Music",
+      "logo": "https://i.imgur.com/T9vWjeB.png",
+      "url": "https://streamunoapp.com:3553/live/cromtvlive.m3u8",
+      "ms": 941,
+      "source": "Музыка"
+    },
+    {
+      "name": "Ivoire Channel (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/gKbNqQv.png",
+      "url": "https://video1.getstreamhosting.com:1936/8244/8244/playlist.m3u8",
+      "ms": 951,
+      "source": "Музыка"
+    },
+    {
+      "name": "CDN Deportes (720p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/yU5LqTL.png",
+      "url": "https://hls.tvabierta.net/hls/036.m3u8",
+      "ms": 951,
+      "source": "Спорт"
+    },
+    {
+      "name": "BabyFirst (720p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/WxLHBwu.png",
+      "url": "https://cdn.fast.jwp.services/v1/channel/1_jB6940Ei_TvhvIHDL/manifest.m3u8",
+      "ms": 959,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "BX Inform (1080p)",
+      "group": "General;News",
+      "logo": "https://i.imgur.com/PF71rdZ.png",
+      "url": "https://reflect-stream-bronxnet.cablecast.tv/live-8/live/stream-4/live.m3u8",
+      "ms": 965,
+      "source": "Новости"
+    },
+    {
+      "name": "TV Mana Russkiy (1080p)",
+      "group": "Religious",
+      "logo": "https://i.imgur.com/fACHqmY.png",
+      "url": "https://w1.manasat.com/tvmana-leste/smil:tvmana-leste.smil/playlist.m3u8",
+      "ms": 966,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Simon (720p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/FfYVCJC.png",
+      "url": "https://hls.simon.ua/live-HD/live/playlist.m3u8",
+      "ms": 967,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Assam Talks (576p)",
+      "group": "News",
+      "logo": "https://dtil.tmsimg.com/assets/s142683_ld_h15_aa.png?lock=720x540",
+      "url": "https://cdn.pishow.tv/ott/live/258/master.m3u8",
+      "ms": 974,
+      "source": "Новости"
+    },
+    {
+      "name": "Espace TV (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/R5tbzFI.png",
+      "url": "https://edge11.vedge.infomaniak.com/livecast/ik:espacetv/manifest.m3u8",
+      "ms": 988,
+      "source": "Новости"
+    },
+    {
+      "name": "TeleDom",
+      "group": "Undefined",
+      "logo": "https://i.imgur.com/071JRrb.png",
+      "url": "https://iam-profi.ru/hls-live/livepkgr/_definst_/liveevent/td720.m3u8",
+      "ms": 1011,
+      "source": "Россия"
+    },
+    {
+      "name": "Bilyonaryo News Channel (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/iTH9Z0j.png",
+      "url": "https://amg19223-amg19223c11-amgplt0352.playout.now3.amagi.tv/playlist/amg19223-amg19223c11-amgplt0352/playlist.m3u8",
+      "ms": 1011,
+      "source": "Новости"
+    },
+    {
+      "name": "AFN TV (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/LctanF8.png",
+      "url": "https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8",
+      "ms": 1024,
+      "source": "Музыка"
+    },
+    {
+      "name": "Music India (576p)",
+      "group": "Music",
+      "logo": "https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540",
+      "url": "https://fta.ektv.in/live/158/master.m3u8",
+      "ms": 1027,
+      "source": "Музыка"
+    },
+    {
+      "name": "DMF (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/sJaBU7X.jpeg",
+      "url": "https://d-m-f.iptv-playoutcenter.de/dmf/dmf1/playlist.m3u8",
+      "ms": 1042,
+      "source": "Музыка"
+    },
+    {
+      "name": "Red Bull TV SD (1080p)",
+      "group": "Outdoor;Sports",
+      "logo": "https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png",
+      "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+      "ms": 1050,
+      "source": "Спорт"
+    },
+    {
+      "name": "MUTV (720p)",
+      "group": "Sports",
+      "logo": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1834.png",
+      "url": "https://fastly.live.brightcove.com/6374054671112/eu-west-1/6058004203001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiYXplMnp5LmVncmVzcy55ODN1ZWIiLCJhY2NvdW50X2lkIjoiNjA1ODAwNDIwMzAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU4MDA0MjAzMDAxIl0sImp0aSI6IjYzNzQwNTQ2NzExMTIifQ.3FmuTna3DAmY7xlhK5fk6LMrosrtrR5VsU2QOgYO5y4/playlist-hls.m3u8",
+      "ms": 1054,
+      "source": "Спорт"
+    },
+    {
+      "name": "Nickelodeon (France) (720p)",
+      "group": "Kids",
+      "logo": "https://i.imgur.com/E84jnP8.png",
+      "url": "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/nickelodeon/live.livx/playlist.m3u8",
+      "ms": 1066,
+      "source": "Детские"
+    },
+    {
+      "name": "Bloomberg TV Mongolia HD (720p)",
+      "group": "Mongolia",
+      "logo": "",
+      "url": "https://cdn4.skygo.mn/live/disk1/BloombergMon/HLSv3-FTA/BloombergMon.m3u8",
+      "ms": 1070,
+      "source": "Free-TV"
+    },
+    {
+      "name": "NTK 21",
+      "group": "General",
+      "logo": "https://i.imgur.com/W9s1flH.png",
+      "url": "https://s97982.cdn.ngenix.net/hls/CH_R79_OTT_DV_HVSK_NTK/variant.m3u8",
+      "ms": 1072,
+      "source": "Россия"
+    },
+    {
+      "name": "FM ITALIA (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/54CO2u9.png",
+      "url": "https://stream2.xdevel.com/video0s975817-1183/stream/playlist.m3u8",
+      "ms": 1073,
+      "source": "Музыка"
+    },
+    {
+      "name": "PBS Kids Mountain (1080p)",
+      "group": "Education;Kids",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/PBS_Kids_logo_%282022%29.svg",
+      "url": "https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst.m3u8",
+      "ms": 1076,
+      "source": "Детские"
+    },
+    {
+      "name": "ETV Cinema HD (1080p)",
+      "group": "Movies",
+      "logo": "https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540",
+      "url": "https://d1z9okhs5q5o80.cloudfront.net/e8903f8e970841deb594cc7c7f11bc8a/etv6N316.m3u8",
+      "ms": 1081,
+      "source": "Кино"
+    },
+    {
+      "name": "Ionian Channel",
+      "group": "Greece",
+      "logo": "https://i.imgur.com/ADVYeQd.png",
+      "url": "https://stream.ioniantv.gr/ionian/live_abr/playlist.m3u8",
+      "ms": 1090,
+      "source": "Free-TV"
+    },
+    {
+      "name": "World Billiards Ⓢ",
+      "group": "Poland",
+      "logo": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/80af06f2-a12e-4406-bd13-b932fd69fffe-width200-quality90.png",
+      "url": "https://9a81dd4ee3884d0dbcacafaf0d81327a.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BilliardsTV/playlist.m3u8",
+      "ms": 1113,
+      "source": "Free-TV"
+    },
+    {
+      "name": "India Talkies (360p)",
+      "group": "Movies",
+      "logo": "https://papaji.freetvindia.com/media/FreeTV_India_Talkies.png",
+      "url": "https://samitaorigin.tangotv.in/INDIATALKIES/SAMITAORIGIN/index.m3u8",
+      "ms": 1115,
+      "source": "Кино"
+    },
+    {
+      "name": "Jibek Joly HD (1080p)",
+      "group": "General",
+      "logo": "https://i.imgur.com/SqyXtgK.png",
+      "url": "https://stream.qazcdn.net/ex6r514/jjtv/playlist.m3u8",
+      "ms": 1130,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "PBS Kids (720p)",
+      "group": "Education;Kids",
+      "logo": "https://i.imgur.com/fg8c9WK.png",
+      "url": "https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8",
+      "ms": 1136,
+      "source": "Детские"
+    },
+    {
+      "name": "RTL Zwee",
+      "group": "Luxembourg",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RTL_Zwee_2023.svg/960px-RTL_Zwee_2023.svg.png",
+      "url": "https://live-edge.rtl.lu/channel2/smil:channel2/playlist.m3u8",
+      "ms": 1136,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Number 1 Damar (720p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/rYtbAGZ.png",
+      "url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8",
+      "ms": 1139,
+      "source": "Музыка"
+    },
+    {
+      "name": "Golf Channel (Czech Republic)",
+      "group": "Sports",
+      "logo": "https://www.sms.cz/kategorie/televize/bmp/loga/velka/golfchannel.png",
+      "url": "https://dash4.antik.sk/live/test_golf_channel/playlist.m3u8",
+      "ms": 1156,
+      "source": "Спорт"
+    },
+    {
+      "name": "B4U Kadak (1080p)",
+      "group": "Movies",
+      "logo": "https://dtil.tmsimg.com/assets/s142695_ld_h15_aa.png?lock=720x540",
+      "url": "https://amg00877-b4unew-amg00877c4-xiaomi-in-5473.playouts.now.amagi.tv/playlist.m3u8",
+      "ms": 1166,
+      "source": "Кино"
+    },
+    {
+      "name": "BSTV (India) (720p)",
+      "group": "News",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/BSTV.png",
+      "url": "https://samitaorigin.tangotv.in/BSTV/SAMITAORIGIN/index.m3u8",
+      "ms": 1171,
+      "source": "Новости"
+    },
+    {
+      "name": "Tele Mistretta",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/OJ3zUS0.png",
+      "url": "https://live.mariatvcdn.com/telemistretta/8fbcd205ada81b295ee6c211c3a80dde.sdp/playlist.m3u8",
+      "ms": 1171,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Tele Friuli",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/AoQxZxD.png",
+      "url": "https://5757bf2aa08e42248fb9b9d620f5d900.msvdn.net/live/S11646715/pE3ax0lT0rBd/playlist.m3u8",
+      "ms": 1172,
+      "source": "Free-TV"
+    },
+    {
+      "name": "America's Voice",
+      "group": "USA",
+      "logo": "https://graph.facebook.com/RealAmericasVoice/picture?width=200&height=200",
+      "url": "https://d2jiqiw4g5lj5k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/AmericasVoiceChannel-prod/AVSamsung/AVSamsung.m3u8",
+      "ms": 1181,
+      "source": "Free-TV"
+    },
+    {
+      "name": "HMTV (India) (720p)",
+      "group": "News",
+      "logo": "https://dtil.tmsimg.com/assets/s143136_ld_h15_aa.png?lock=720x540",
+      "url": "https://cdn.pishow.tv/ott/live/280/master.m3u8",
+      "ms": 1189,
+      "source": "Новости"
+    },
+    {
+      "name": "VTV (Maldives)",
+      "group": "News",
+      "logo": "https://i.imgur.com/6bY9Umo.png",
+      "url": "https://sunplay-cdn.bitratelabs.com/live/local-channel/vtv-7a0f24809c234ea78d972b1f336ac1b9/index.m3u8",
+      "ms": 1195,
+      "source": "Новости"
+    },
+    {
+      "name": "City Eden Classic Music",
+      "group": "Music",
+      "logo": "https://i.imgur.com/l7BE8l6.png",
+      "url": "https://cityeden.catcast.tv/content/47400/index.m3u8",
+      "ms": 1198,
+      "source": "Россия"
+    },
+    {
+      "name": "TR Sport (480p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/ELXmaqg.png",
+      "url": "https://livetr.teleromagna.it/mia/live/playlist.m3u8",
+      "ms": 1201,
+      "source": "Спорт"
+    },
+    {
+      "name": "City Eden KinoAction",
+      "group": "Movies",
+      "logo": "https://i.imgur.com/uuzuvD0.png",
+      "url": "https://cityeden.catcast.tv/content/41333/index.m3u8",
+      "ms": 1202,
+      "source": "Россия"
+    },
+    {
+      "name": "Pervyy Respublikanskiy (576p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/ti4OMBv.png",
+      "url": "https://streaming.televizor-24-tochka.ru/live/27.m3u8",
+      "ms": 1202,
+      "source": "Россия"
+    },
+    {
+      "name": "TV Arta (720p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/MAhJkK9.png",
+      "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/mps-vgx-u9p-qv1/index.m3u8",
+      "ms": 1214,
+      "source": "Новости"
+    },
+    {
+      "name": "MNB HD",
+      "group": "Mongolia",
+      "logo": "",
+      "url": "https://cdn4.skygo.mn/live/disk1/MNB/HLSv3-FTA/MNB.m3u8",
+      "ms": 1214,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Folx Slovenija",
+      "group": "Slovenia",
+      "logo": "https://i.imgur.com/RK1IASU.png",
+      "url": "https://folxsloapp.b-cdn.net/1080p/index.m3u8",
+      "ms": 1214,
+      "source": "Free-TV"
+    },
+    {
+      "name": "DanceTV Techno Warehouse (1080p)",
+      "group": "Music",
+      "logo": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tw-logo-dqofMpknglzhuurr3HkwtzR7cqGZHj.png",
+      "url": "https://m2b2.worldcast.tv:7443/dancetelevisionthree/dancetelevisionthree.m3u8",
+      "ms": 1216,
+      "source": "Музыка"
+    },
+    {
+      "name": "Montones TV (720p)",
+      "group": "Music",
+      "logo": "https://montonestv.com/wp-content/uploads/2025/11/montones-logo.png",
+      "url": "https://183.giatvcdn.com/ssh101/ssh101/montonestv1/playlist.m3u8",
+      "ms": 1218,
+      "source": "Музыка"
+    },
+    {
+      "name": "Love Nature HD (1080p)",
+      "group": "Outdoor",
+      "logo": "https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png",
+      "url": "https://mumbai-edge.smartplaytv.in/LoveNature/index.m3u8",
+      "ms": 1221,
+      "source": "Русскоязычные"
+    },
+    {
+      "name": "Bicolor+ Premium",
+      "group": "Sports",
+      "logo": "https://img-evg3.tv360.bitel.com.pe/peru-image/2026/09/24/00/1790183086681/1dff7002a22a_640_360.png",
+      "url": "https://live-evg10.tv360.bitel.com.pe/bitel/bicolorpremium_abr/bitel/bicolorpremium_720p/chunks.m3u8",
+      "ms": 1221,
+      "source": "Спорт"
+    },
+    {
+      "name": "ACC Digital Network (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/V6Kaqha.png",
+      "url": "https://raycom-accdn-firetv.amagi.tv/playlist.m3u8",
+      "ms": 1236,
+      "source": "Спорт"
+    },
+    {
+      "name": "TSN The Ocho (1080p)",
+      "group": "Sports",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1400003R3_20240709T002034SQUARE.png",
+      "url": "https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rds8g35qfqrnv/TSN_The_Ocho.m3u8",
+      "ms": 1243,
+      "source": "Спорт"
+    },
+    {
+      "name": "Dabanga TV (1080p)",
+      "group": "Education;News",
+      "logo": "https://i.imgur.com/BH1N6TA.png",
+      "url": "https://hls.dabangasudan.org/hls/stream.m3u8",
+      "ms": 1246,
+      "source": "Новости"
+    },
+    {
+      "name": "Persiana Fight",
+      "group": "Sports",
+      "logo": "",
+      "url": "https://fighthls.persiana.live/hls/stream.m3u8",
+      "ms": 1249,
+      "source": "Спорт"
+    },
+    {
+      "name": "KTV Sport (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/R1hGX1d.png",
+      "url": "https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8",
+      "ms": 1254,
+      "source": "Спорт"
+    },
+    {
+      "name": "AS3 Sport TV (1080p)",
+      "group": "Sports",
+      "logo": "https://i.ibb.co/bRmGbsyV/A3-SPORTTV.jpg",
+      "url": "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
+      "ms": 1258,
+      "source": "Спорт"
+    },
+    {
+      "name": "Lira Tv",
+      "group": "Italy",
+      "logo": "https://i.imgur.com/S0ReVEo.png",
+      "url": "https://a928c0678d284da5b383f29ecc5dfeec.msvdn.net/live/S57315730/8kTBWibNteJA/playlist.m3u8",
+      "ms": 1259,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Strana FM",
+      "group": "Music",
+      "logo": "https://i.imgur.com/WsPlKJJ.png",
+      "url": "https://live-stranafm.cdnvideo.ru/stranafm/smil:stranafm.smil/playlist.m3u8",
+      "ms": 1260,
+      "source": "Россия"
+    },
+    {
+      "name": "El Sol Network TV (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/TIH3zlP.png",
+      "url": "https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8",
+      "ms": 1260,
+      "source": "Музыка"
+    },
+    {
+      "name": "City Eden MedZdrav",
+      "group": "Lifestyle",
+      "logo": "https://i.imgur.com/BM4E0Kr.png",
+      "url": "https://cityeden.catcast.tv/content/47519/index.m3u8",
+      "ms": 1282,
+      "source": "Россия"
+    },
+    {
+      "name": "Swerve Combat (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/eFZh7aG.png",
+      "url": "https://linear-253.frequency.stream/mt/roku/253/hls/master/playlist.m3u8",
+      "ms": 1306,
+      "source": "Спорт"
+    },
+    {
+      "name": "Formula 1 AntenaPlay (576i)",
+      "group": "Sports",
+      "logo": "https://assets.antenaplay.ro/2024/02/23/XUKfJwir4MxNeP4nHtG7.png",
+      "url": "https://stream1.antenaplay.ro/promo/formula-1-las-vegas-20-2211/chunklist.m3u8",
+      "ms": 1309,
+      "source": "Спорт"
+    },
+    {
+      "name": "America's Voice (720p)",
+      "group": "News",
+      "logo": "",
+      "url": "https://content.uplynk.com/channel/26bd482ffe364a1282bc3df28bd3c21f.m3u8",
+      "ms": 1311,
+      "source": "Новости"
+    },
+    {
+      "name": "Savoir Média",
+      "group": "Canada",
+      "logo": "https://i.imgur.com/pa4wOVY.png",
+      "url": "https://hls.savoir.media/live/stream.m3u8",
+      "ms": 1313,
+      "source": "Free-TV"
+    },
+    {
+      "name": "Jordan Songs (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/1DE7Gmw.png",
+      "url": "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Song/playlist.m3u8",
+      "ms": 1317,
+      "source": "Музыка"
+    },
+    {
+      "name": "News 1st (576p)",
+      "group": "News",
+      "logo": "https://dtil.tmsimg.com/assets/s143587_ld_h15_aa.png?lock=720x540",
+      "url": "https://d1msejlow1t3l4.cloudfront.net/fta/News1st/playlist.m3u8",
+      "ms": 1328,
+      "source": "Новости"
+    },
+    {
+      "name": "City Eden Sirtaki TV",
+      "group": "Music",
+      "logo": "https://i.imgur.com/V3MTfyc.png",
+      "url": "https://cityeden.catcast.tv/content/46421/index.m3u8",
+      "ms": 1329,
+      "source": "Россия"
+    },
+    {
+      "name": "India News Rajasthan (576p)",
+      "group": "News",
+      "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/India_News_Rajasthan.png",
+      "url": "https://fta.ektv.in/live/601/master.m3u8",
+      "ms": 1330,
+      "source": "Новости"
+    },
+    {
+      "name": "TV9 Bangla (1080p)",
+      "group": "News",
+      "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TV9_BANGLA/images/LOGO_HD/image.png",
+      "url": "https://amg01106-amg01106c1-amgplt0747.playout.now3.amagi.tv/amg01106c1/hls.m3u8",
+      "ms": 1333,
+      "source": "Новости"
+    },
+    {
+      "name": "Trace Urban International HD (1080p)",
+      "group": "Music",
+      "logo": "https://i.imgur.com/DLIbUMx.png",
+      "url": "https://channels.trace.plus/Traceprod/URBAN_INTER_hd/index.m3u8",
+      "ms": 1337,
+      "source": "Музыка"
+    },
+    {
+      "name": "RDN (1080p)",
+      "group": "News",
+      "logo": "https://i.imgur.com/x02CGSW.png",
+      "url": "https://edge.essastream.com/rdntv/tracks-v1a1/mono.m3u8",
+      "ms": 1338,
+      "source": "Новости"
+    },
+    {
+      "name": "Extrema Kids TV (1080p)",
+      "group": "Animation;Kids",
+      "logo": "https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg",
+      "url": "https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8",
+      "ms": 1343,
+      "source": "Детские"
+    },
+    {
+      "name": "City Eden Recepty Gurmana",
+      "group": "Cooking",
+      "logo": "https://i.imgur.com/wR0pvRc.png",
+      "url": "https://cityeden.catcast.tv/content/47516/index.m3u8",
+      "ms": 1345,
+      "source": "Россия"
+    },
+    {
+      "name": "Strongman (720p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/bVQBF6R.png",
+      "url": "https://rightsboosterltd-scl-2-eu.rakuten.wurl.tv/playlist.m3u8",
+      "ms": 1345,
+      "source": "Спорт"
+    },
+    {
+      "name": "Africa 24 Sport (1080p)",
+      "group": "News;Sports",
+      "logo": "https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1",
+      "url": "https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8",
+      "ms": 1355,
+      "source": "Спорт"
+    },
+    {
+      "name": "City Eden KinoDok",
+      "group": "Documentary;Series",
+      "logo": "https://i.imgur.com/itRbMX3.png",
+      "url": "https://cityeden.catcast.tv/content/38354/index.m3u8",
+      "ms": 1367,
+      "source": "Россия"
+    },
+    {
+      "name": "Radio Carnaval TV (720p)",
+      "group": "Entertainment;Music",
+      "logo": "https://i.imgur.com/cdpbkSo.png",
+      "url": "https://eu1.servers10.com:8081/8116/index.m3u8",
+      "ms": 1368,
+      "source": "Музыка"
+    },
+    {
+      "name": "TJK TV (1080p)",
+      "group": "Sports",
+      "logo": "https://i.imgur.com/3zHdkYG.png",
+      "url": "https://tjktv-live.tjk.org/tjktv.m3u8",
+      "ms": 1368,
+      "source": "Спорт"
+    }
+  ],
+  "failedReasons": {
+    "манифест": 163,
+    "CORS манифеста": 120,
+    "TypeError": 64,
+    "AbortError": 41,
+    "фрагмент": 29,
+    "вариант": 20,
+    "медленно": 19,
+    "CORS варианта": 2
+  }
+}
