@@ -1155,13 +1155,6 @@ function bindEvents() {
     }
   });
 
-  els.promptInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      els.promptOk.click();
-    }
-  });
-
   els.pipBtn.addEventListener('click', async () => {
     if (!document.pictureInPictureEnabled) { toast('Браузер не поддерживает картинку в картинке', 3000); return; }
     try {
